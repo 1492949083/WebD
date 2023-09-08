@@ -1,0 +1,23 @@
+:root {
+    --bg-color: rgb(34, 34, 49);
+    --text-color: rgb(253, 237, 202);
+    --text-color-accent: rgb(255, 201, 120);
+}
+
+* {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color-accent);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+img {
+    width: 50vw;
+    border-radius: 30px;
+}
