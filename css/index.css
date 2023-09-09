@@ -1,4 +1,12 @@
-body {    
+.indexBox {
+    padding: 2vw;
     display:grid;
     justify-items: center;
+    align-items: center;
+    grid-row-gap: 2vh;
+}
+
+.indexBox h1 {
+    font-size: 240%;
+    margin: 7vh;
 }

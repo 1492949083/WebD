@@ -1,11 +1,14 @@
 :root {
     --bg-color: rgb(34, 34, 49);
+    --linear-gradient-bg-color: linear-gradient(to bottom, rgb(34, 34, 49) 30%, rgb(17, 17, 36));
     --text-color: rgb(253, 237, 202);
     --text-color-accent: rgb(255, 201, 120);
 }
 
 * {
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -13,8 +16,11 @@ a {
     text-decoration: none;
 }
 
-body {
-    background-color: var(--bg-color);
+
+.Abox {
+    height: 100vh;
+    width: 100vw;
+    background: var(--linear-gradient-bg-color); 
 }
 
 img {
