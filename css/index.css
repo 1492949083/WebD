@@ -28,7 +28,7 @@
 
 #tg {
     position: fixed; 
-    right: calc(1vh + 3.5vh);
+    right: calc(1.5vw + 3.5vh);
     padding: 10px;
     font-size: 3.5vh;
     color: var(--text-color);
