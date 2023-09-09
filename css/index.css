@@ -10,3 +10,32 @@
     font-size: 240%;
     margin: 7vh;
 }
+
+#github {
+    position: fixed;
+    right: 1vw;
+    padding: 10px;
+    font-size: 3.5vh;
+    color: var(--text-color);
+
+    transition: color 0.3s;
+}
+
+#github:hover {
+    color: var(--text-color-accent);
+
+}
+
+#tg {
+    position: fixed; 
+    right: calc(1vh + 3.5vh);
+    padding: 10px;
+    font-size: 3.5vh;
+    color: var(--text-color);
+
+    transition: color 0.3s;
+}
+
+#tg:hover {
+    color: var(--text-color-accent);
+}
