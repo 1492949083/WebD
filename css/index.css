@@ -11,31 +11,37 @@
     margin: 7vh;
 }
 
+.icon {
+    position: fixed;
+    right: 4vh;
+    padding: 0.4vh;
+}
+
 #github {
     position: fixed;
-    right: 1vw;
-    padding: 10px;
     font-size: 3.5vh;
     color: var(--text-color);
+    opacity: 0.3;
 
-    transition: color 0.3s;
+    transition: color 0.3s, opacity 1s;
 }
 
 #github:hover {
     color: var(--text-color-accent);
-
+    opacity: 1;
 }
 
 #tg {
     position: fixed; 
-    right: calc(1.5vw + 3.5vh);
-    padding: 10px;
+    right: 5vh;
     font-size: 3.5vh;
     color: var(--text-color);
+    opacity: 0.3;
 
-    transition: color 0.3s;
+    transition: color 0.3s, opacity 1s;
 }
 
 #tg:hover {
     color: var(--text-color-accent);
+    opacity: 1;
 }
