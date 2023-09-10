@@ -43,7 +43,7 @@ function changeTheme(theme) {
     }
 
     //cookie
-    document.cookie = `theme=${theme};domain=.mc8.me;expires=Tue, 19 Jan 2038 03:14:07 GMT`;
+    document.cookie = `theme=${theme};path=/;expires=Tue, 19 Jan 2038 03:14:07 GMT`;
 }
 
 // 获取指定 Cookie 值
@@ -77,10 +77,7 @@ window.onload = () => {
     // 如果存在主题名，则设置主题
     if (theme) {
         changeTheme(theme);
-    }else{
-        changeTheme('theme0');
     }
-
 };
 
 function thm0() {
