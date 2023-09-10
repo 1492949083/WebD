@@ -13,6 +13,7 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    transition:  0.35s;
 }
 
 
@@ -22,14 +23,17 @@ a {
 }
 
 body {
-
     background-color: var(--bg-Dcolor);
+
+    transition: backeround-color 0.5s;
 }
 
 .Abox {
     height: 100vh;
     width: auto;
     background: var(--linear-gradient-bg-color);
+    
+
     
 }
 
@@ -82,7 +86,7 @@ img {
     top: 1vh;
     height: 4.5vh;
     width: 4.5vh;
-    background-color: var(--bg-color);
+    background-color: rgb(34, 34, 49);
     border-radius: 1.5vh;
 }
 
@@ -91,7 +95,7 @@ img {
     top: 1vh;
     height: 4.5vh;
     width: 4.5vh;
-    background-color: var(--text-color-accent);
+    background-color: rgb(255, 201, 120);
     border-radius: 1.5vh;
 }
 
