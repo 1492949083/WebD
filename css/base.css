@@ -1,9 +1,12 @@
 :root {
     --bg-color: rgb(34, 34, 49);
-    --bg-Dcolor:  rgb(17, 17, 36);
-    --linear-gradient-bg-color: linear-gradient(to bottom, rgb(34, 34, 49) 30%, rgb(17, 17, 36));
+    --bg-Dcolor: rgb(17, 17, 36);
+    --linear-gradient-bg-color: linear-gradient(to bottom, var(--bg-color) 30%, var(--bg-Dcolor));
     --text-color: rgb(253, 237, 202);
     --text-color-accent: rgb(255, 201, 120);
+    /* 半透明 */
+    --gray-alpha: rgba(255, 255, 255, 0.15);
+    --Dgray-alpha: rgba(0, 0, 0, 0.16);
 }
 
 * {
@@ -19,17 +22,123 @@ a {
 }
 
 body {
-    
+
     background-color: var(--bg-Dcolor);
 }
 
 .Abox {
     height: 100vh;
     width: auto;
-    background: var(--linear-gradient-bg-color); 
+    background: var(--linear-gradient-bg-color);
+    
 }
 
 img {
     width: 50vw;
     border-radius: 30px;
+}
+
+
+
+.themeSelector {
+    position: fixed;
+    display: flex;
+    /* 默认水平排列,会自动折叠 */
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 10vh;
+    margin: 1vh;
+    padding: 1vh;
+
+
+    /* 绝对定位居中 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.themeSelector .button {
+    margin: 0.5vh;
+    height: 9vh;
+    width: 11vh;
+    background-color: var(--Dgray-alpha);
+    border-radius: 1.9vh;
+    backdrop-filter: blur(30px);
+}
+
+.themeSelector .button p {
+    position: relative;
+    top: 1.5vh;
+    font-size: 1.8vh;
+    text-align: center;
+}
+
+.colorBlock1 {
+    display: flex;
+    justify-content: center;
+}
+
+.colorBlock1 .block1 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: #1e2d39;
+    border-radius: 1.5vh;
+}
+
+.colorBlock1 .block2 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: #ff9f53;
+    border-radius: 1.5vh;
+}
+
+
+.colorBlock2 {
+    display: flex;
+    justify-content: center;
+}
+
+.colorBlock2 .block1 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: #C1DBDA;
+    border-radius: 10px;
+}
+
+.colorBlock2 .block2 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: #F2987D;
+    border-radius: 10px;
+}
+
+
+.colorBlock3 {
+    display: flex;
+    justify-content: center;
+}
+
+.colorBlock3 .block1 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: #f8f5d6;
+    border-radius: 10px;
+}
+
+.colorBlock3 .block2 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: #80d1c8;
+    border-radius: 10px;
 }
