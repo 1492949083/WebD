@@ -72,6 +72,29 @@ img {
     text-align: center;
 }
 
+.colorBlock0 {
+    display: flex;
+    justify-content: center;
+}
+
+.colorBlock0 .block1 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: var(--bg-color);
+    border-radius: 1.5vh;
+}
+
+.colorBlock0 .block2 {
+    position: relative;
+    top: 1vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    background-color: var(--text-color-accent);
+    border-radius: 1.5vh;
+}
+
 .colorBlock1 {
     display: flex;
     justify-content: center;
