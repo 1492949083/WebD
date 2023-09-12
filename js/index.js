@@ -1,47 +1,39 @@
-// 获取indexBox容器
-const indexBox = document.querySelector('.indexBox');
-
-// 使用Fetch请求/w/目录
-fetch('/w/')
-    .then(response => response.text())
-    .then(html => {
-
-        // 创建临时DOM元素
-        const doc = document.createElement('div');
-        doc.innerHTML = html;
-
-        // 获取目录下所有链接
-        const links = doc.querySelectorAll('a');
-
-        // 遍历链接 
-        links.forEach(link => {
-
-            // 获取href和文本
-            const href = link.getAttribute('href');
-            const text = link.innerText;
-
-            // 创建h3和a元素 
-            const h3 = document.createElement('h3');
-            const a = document.createElement('a');
-
-            // 设置属性
-            a.href = href;
-            a.innerText = text;
-
-            // 构造标签树
-            h3.appendChild(a);
-
-            // 插入到页面
-            indexBox.appendChild(h3);
-
-        });
-
-    });
-
-
-// 在页面加载完毕后执行
-window.onload = () => {
-
-
-
-};
+// 获取作业目录下的所有HTML文件
+const homeworkFiles = [
+    { name: "作业1", date: "2023/9/6", url: "./w/W1.html" },
+    { name: "作业2", date: "2023/9/8", url: "./w/W2.html" },
+  ];
+  
+  // 找到最新的作业
+  let newestHomework = homeworkFiles[0];
+  for (const homework of homeworkFiles) {
+    const currentDate = new Date(homework.date);
+    const newestDate = new Date(newestHomework.date);
+    if (currentDate > newestDate) {
+      newestHomework = homework;
+    }
+  }
+  
+  // 创建作业索引的父元素
+  const indexBox = document.querySelector(".indexBox");
+  
+  // 遍历作业文件列表，创建链接并添加到索引中
+  homeworkFiles.forEach((homework) => {
+    const linkElement = document.createElement("h3");
+    const linkText = document.createTextNode(
+      `${homework.name} ${homework.date}`
+    );
+    const link = document.createElement("a");
+    link.href = homework.url;
+    link.appendChild(linkText);
+    linkElement.appendChild(link);
+  
+    // 如果是最新作业，添加标记
+    if (homework === newestHomework) {
+      const newestText = document.createTextNode(" (最新)");
+      linkElement.appendChild(newestText);
+    }
+  
+    indexBox.appendChild(linkElement);
+  });
+  
