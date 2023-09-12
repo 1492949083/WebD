@@ -2,6 +2,7 @@
 .theme0 {
     --bg-color: rgb(34, 34, 49);
     --bg-Dcolor: rgb(17, 17, 36);
+    --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: rgb(253, 237, 202);
     --text-color-accent: rgb(255, 201, 120);
     /* 半透明 */
@@ -11,6 +12,7 @@
 .theme1 {
     --bg-color: #1e2d39;
     --bg-Dcolor: #0f1a23;
+    --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: #fff;
     --text-color-accent: #ff9f53;
     /* 半透明 */
@@ -20,6 +22,7 @@
 .theme2 {
     --bg-color: #C1DBDA;
     --bg-Dcolor: #5B9391;
+    --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: #52565e;
     --text-color-accent: #F2987D;
     /* 半透明 */
@@ -29,6 +32,7 @@
 .theme3 {
     --bg-color: #f8f5d6;
     --bg-Dcolor: #D5D0A1;
+    --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: #52565e;
     --text-color-accent: #80d1c8;
     /* 半透明 */
