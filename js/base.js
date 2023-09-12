@@ -70,8 +70,9 @@ const theme = getCookie('theme');
 // 如果存在主题名，则设置主题
 if (theme) {
     changeTheme(theme);
+} else {
+    changeTheme('theme0');
 }
-
 
 
 // 页面加载完成
