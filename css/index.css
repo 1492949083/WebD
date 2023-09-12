@@ -45,3 +45,18 @@
     color: var(--text-color-accent);
     opacity: 1;
 }
+
+#gitee {
+    position: fixed; 
+    right: 9vh;
+    font-size: 3.5vh;
+    color: var(--text-color);
+    opacity: 0.3;
+
+    transition: color 0.3s, opacity 1s;
+}
+
+#gitee:hover {
+    color: var(--text-color-accent);
+    opacity: 1;
+}

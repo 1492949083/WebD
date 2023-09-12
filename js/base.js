@@ -64,16 +64,28 @@ function getCookie(name) {
     return null;
 }
 
+// 获取保存在Cookie的主题名
+const theme = getCookie('theme');
+
+// 如果存在主题名，则设置主题
+if (theme) {
+    changeTheme(theme);
+}
+
+
+
 // 页面加载完成
 window.onload = () => {
+// 加载网页图标
+// 创建一个 link 元素
+    const link = document.createElement('link');
+    link.rel = 'icon'; // 指定关系为 icon，表示网页图标
+    link.href = '/img/favicon.ico'; // 替换为你的图标文件的路径
 
-    // 获取保存在Cookie的主题名
-    const theme = getCookie('theme');
+    // 将 link 元素添加到文档头部
+    document.head.appendChild(link);
 
-    // 如果存在主题名，则设置主题
-    if (theme) {
-        changeTheme(theme);
-    }
+
 };
 
 function thm0() {
