@@ -1,13 +1,4 @@
-:root {
-    --bg-color: rgb(34, 34, 49);
-    --bg-Dcolor: rgb(17, 17, 36);
-    --linear-gradient-bg-color: linear-gradient(to bottom, var(--bg-color) 30%, var(--bg-Dcolor));
-    --text-color: rgb(253, 237, 202);
-    --text-color-accent: rgb(255, 201, 120);
-    /* 半透明 */
-    --gray-alpha: rgba(255, 255, 255, 0.15);
-    --Dgray-alpha: rgba(0, 0, 0, 0.16);
-}
+
 
 * {
     color: var(--text-color);

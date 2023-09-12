@@ -36,11 +36,7 @@ const themes = {
 };
 
 function changeTheme(theme) {
-    const root = document.documentElement;
-
-    for (let key in themes[theme]) {
-        root.style.setProperty(key, themes[theme][key]);
-    }
+    document.documentElement.className = theme;
 
     //cookie
     document.cookie = `theme=${theme};path=/;expires=Tue, 19 Jan 2038 03:14:07 GMT`;
