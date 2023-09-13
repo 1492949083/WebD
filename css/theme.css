@@ -6,7 +6,7 @@
     --text-color: rgb(253, 237, 202);
     --text-color-accent: rgb(255, 201, 120);
     /* 半透明 */
-    --gray-alpha: rgba(255, 255, 255, 0.15);
+    --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
 }
 .theme1 {

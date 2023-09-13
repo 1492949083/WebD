@@ -161,3 +161,9 @@ img {
     background-color: #80d1c8;
     border-radius: 10px;
 }
+
+
+
+input {
+    background-color: var(--linear-gradient-bg-color);
+}

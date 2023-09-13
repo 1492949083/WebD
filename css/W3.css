@@ -1,0 +1,133 @@
+
+
+.l-r{
+    position: relative;
+    display: flex;
+    /* 默认水平排列,会自动折叠 */
+    flex-wrap: wrap;
+    left: 20px;
+}
+
+.l-r h2 {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+
+.l-a-r {
+    position: absolute;
+    display: flex;
+    /* 垂直排列 */
+    flex-direction: column;
+    /* 水平居中 */
+    justify-content: center;
+    
+
+    /* 绝对定位居中 */
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.l-a-r .i {
+    
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-alpha);
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.i:focus {
+    border: 2px solid var(--text-color-accent);
+    box-shadow: 0 0 8px 0 var(--gray-alpha);
+    
+    background-color: var(--gray-alpha);
+}
+
+
+.l-a-r .v {
+    
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-alpha);
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.v:focus {
+    border: 2px solid var(--text-color-accent);
+    box-shadow: 0 0 8px 0 var(--gray-alpha);
+    background-color: var(--gray-alpha);
+}
+
+.v_btn {
+    position: absolute;
+    right: 0px;
+    color: var(--bg-color);
+    margin: 10px;
+    height: 45px;
+    width: 90px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-alpha);
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    background-color: var(--text-color-accent);
+}
+
+.verification {
+    display: grid;
+    grid-template-columns: 200px 100px;
+
+}
+
+
+
+.l_btn {
+    color: var(--bg-color);
+    margin: 10px;
+    width: 310px;
+    height: 50px;
+    border-radius: 100vw;
+    border: 1px solid var(--gray-alpha);
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--text-color-accent);
+}
+
+.wechat {
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px;
+    width: 310px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color-accent);
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+}
+.wechat * {
+    margin: 5px;
+    color: var(--text-color-accent);
+}
+
+
+/* .Tlogin {
+    border-bottom: 0px solid var(--bg-Dcolor);
+} */
+.Tlogin {
+    border-bottom: 5px solid var(--text-color-accent);
+}
