@@ -49,6 +49,36 @@
     background-color: var(--gray-alpha);
 }
 
+.hkBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-alpha);
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--gray-alpha);
+}
+
+.hkBox p {
+    font-size: 14px;
+}
+
+.hk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    left: 13px;
+    height: 42px;
+    width: 42px;
+    background-color: var(--bg-color);
+}
 
 .l-a-r .v {
     
@@ -131,3 +161,4 @@
 .Tlogin {
     border-bottom: 5px solid var(--text-color-accent);
 }
+
