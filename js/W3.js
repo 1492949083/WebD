@@ -92,10 +92,12 @@ hk.onmousedown = function (e) {
         if (end == true) {
             hkBgText.style.opacity = 1;
         } else {
-            
             let _x = e.clientX - x;
             if (Yclick == true) {
+                hkBg.style.opacity = 1;
                 limitHk(_x);
+            } else {
+                hkBg.style.opacity = 0;
             }
         }
     }

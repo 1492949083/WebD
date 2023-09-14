@@ -74,6 +74,7 @@
     outline: none;
     background-color: var(--text-color-accent);
     transition: left 0.5s;
+    opacity: 0;
 }
 
 .hkBg p {
