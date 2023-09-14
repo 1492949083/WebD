@@ -88,7 +88,8 @@ hk.onmousedown = function (e) {
     //获取鼠标在滑块上的位置
     let x = e.clientX - hk.offsetLeft;
     //移动滑块
-    document.onmousemove = function (e) {
+    document.addEventListener('mousemove', function (e) {
+        // 处理触摸开始逻辑
         if (end == true) {
             hkBgText.style.opacity = 1;
         } else {
@@ -100,6 +101,10 @@ hk.onmousedown = function (e) {
                 hkBg.style.opacity = 0;
             }
         }
+      }); 
+      
+    document.onmousemove = function (e) {
+        
     }
     
     //松开取消
