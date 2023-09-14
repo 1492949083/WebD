@@ -79,19 +79,22 @@ function moveHk(x) {
 
 
 let end = false;
+let Yclick = false;
 
 document.onselectstart = function () { return false; };// 禁止文字选择
 //滑块被按住移动,松开取消
 hk.onmousedown = function (e) {
+    Yclick = true;
     //获取鼠标在滑块上的位置
     let x = e.clientX - hk.offsetLeft;
     //移动滑块
-    if (end == false) {
-        document.onmousemove = function (e) {
-            if (end == true) {
-                hkBgText.style.opacity = 1;
-            } else {
-                let _x = e.clientX - x;
+    document.onmousemove = function (e) {
+        if (end == true) {
+            hkBgText.style.opacity = 1;
+        } else {
+            
+            let _x = e.clientX - x;
+            if (Yclick == true) {
                 limitHk(_x);
             }
         }
@@ -99,11 +102,14 @@ hk.onmousedown = function (e) {
     
     //松开取消
     document.onmouseup = function () {
-        if (end != false & hk.offsetLeft < 277) {
+        Yclick = false;
+        if ( hk.offsetLeft < 277) {
             moveHk(13);
             hkBgText.style.opacity = 0;
         } else {
-            end = true;
+            if (hk.offsetLeft >= 277) {
+                end = true;
+            }
         }
     }
 }
