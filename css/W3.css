@@ -1,6 +1,4 @@
-
-
-.l-r{
+.l-r {
     position: relative;
     display: flex;
     /* 默认水平排列,会自动折叠 */
@@ -21,7 +19,7 @@
     flex-direction: column;
     /* 水平居中 */
     justify-content: center;
-    
+
 
     /* 绝对定位居中 */
     left: 50%;
@@ -30,7 +28,7 @@
 }
 
 .l-a-r .i {
-    
+
     margin: 10px;
     width: 300px;
     height: 30px;
@@ -45,7 +43,7 @@
 .i:focus {
     border: 2px solid var(--text-color-accent);
     box-shadow: 0 0 8px 0 var(--gray-alpha);
-    
+
     background-color: var(--gray-alpha);
 }
 
@@ -64,6 +62,30 @@
     background-color: var(--gray-alpha);
 }
 
+.hkBg {
+    position: absolute;
+    margin: 10px;
+    left: 0px;
+    height: 40px;
+    width: 0px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    outline: none;
+    background-color: var(--text-color-accent);
+    transition: left 0.5s;
+}
+
+.hkBg p {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-60%);
+    top: 32.8%;
+    color: var(--bg-color);
+    /* 透明 */
+    opacity: 0;
+}
+
 .hkBox p {
     font-size: 14px;
 }
@@ -72,16 +94,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    position: fixed;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
     left: 13px;
     height: 42px;
     width: 42px;
     background-color: var(--bg-color);
+
+    transition: left 0s;
 }
 
 .l-a-r .v {
-    
+
     margin: 10px;
     width: 200px;
     height: 30px;
@@ -110,6 +135,7 @@
     padding: 5px;
     font-size: 14px;
     outline: none;
+    cursor: pointer;
     background-color: var(--text-color-accent);
 }
 
@@ -131,6 +157,7 @@
     padding: 5px;
     font-size: 16px;
     outline: none;
+    cursor: pointer;
     background-color: var(--text-color-accent);
 }
 
@@ -139,7 +166,8 @@
     /* 水平居中 */
     justify-content: center;
     align-items: center;
-    
+
+    cursor: pointer;
     margin: 10px;
     width: 310px;
     height: 50px;
@@ -149,6 +177,7 @@
     font-size: 16px;
     outline: none;
 }
+
 .wechat * {
     margin: 5px;
     color: var(--text-color-accent);
@@ -161,4 +190,3 @@
 .Tlogin {
     border-bottom: 5px solid var(--text-color-accent);
 }
-

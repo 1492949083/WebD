@@ -21,18 +21,21 @@
                     <h2 class="Tlogin">登录</h2>
                     <h2 class="Tregister">注册</h2>
                 </div>
-                <input class="i" type="text" name="username" id="username" placeholder="请输入用户名">
+                <input class="i" type="text" name="username" id="username" placeholder="手机号/邮箱">
                 
-                <div class="hkBox">
+                <div id="hkBox" class="hkBox">
                     <p class="hkText" style="text-align: center;">请按住滑块,拖动到最右边</p>
-                    <div class="hkBg"></div>
-                    <div id="slider" class="hk">
+                    <div id="hkBg" class="hkBg">
+                        <p id="hkBgText" class="hkBgText" style="text-align: center;">验证成功</p>
+                    </div>
+                    <div id="hk" class="hk">
                         <i class="fas fa-arrow-right"></i>
                     </div>
+                    
                 </div>
 
                 <div class="verification">
-                    <input class="v" type="text" name="verification" id="verification" placeholder="请输入验证码">
+                    <input class="v" type="text" name="verification" id="verification" placeholder="短信验证码">
                     <input class="v_btn" type="button" value="获取验证码">
                 </div>
                 <input class="l_btn" type="submit" value="登录">
