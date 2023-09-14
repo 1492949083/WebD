@@ -45,7 +45,30 @@ const hk = document.getElementById("hk");
 const hkBox = document.getElementById("hkBox");
 const hkBg = document.getElementById("hkBg");
 const hkBgText = document.getElementById("hkBgText");
+const money = document.getElementById("money");
+const money_btn = document.getElementById("money_btn");
+const moneyText = document.getElementById("moneyText");
+const Tlogin = document.getElementById("Tlogin");
+const Tregister = document.getElementById("Tregister");
 
+//点击登录栏
+var inLogin = true;
+
+Tlogin.onclick = function () {
+    if (inLogin == false) {
+        Tlogin.style.borderBottom = "5px solid var(--text-color-accent)";
+        Tregister.style.borderBottom = "none";
+        inLogin = true;
+    }
+}
+
+Tregister.onclick = function () {
+    if (inLogin == true) {
+        Tregister.style.borderBottom = "5px solid var(--text-color-accent)";
+        Tlogin.style.borderBottom = "none";
+        inLogin = false;
+    }
+}
 
 
 // 移动滑块
@@ -94,6 +117,21 @@ function limitHk(x) {
     }
     //移动滑块
     moveHk(x);
+}
+
+
+var click = false;
+//点击money_btn出现money
+money_btn.onclick = function () {
+    if (click == false) {
+        money.style.display = "block";
+        moneyText.style.display = "none";
+        click = true;
+    } else {
+        money.style.display = "none";
+        moneyText.style.display = "block";
+        click = false;
+    }
 }
 
 

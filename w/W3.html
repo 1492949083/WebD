@@ -18,8 +18,8 @@
             <!-- 表单标签使用 -->
             <form class="l-a-r" action="" method="post" name="login">
                 <div class="l-r">
-                    <h2 class="Tlogin">登录</h2>
-                    <h2 class="Tregister">注册</h2>
+                    <h2 id="Tlogin" class="Tlogin" >登录</h2>
+                    <h2 id="Tregister" class="Tregister">注册</h2>
                 </div>
                 <input class="i" type="text" name="username" id="username" placeholder="手机号/邮箱">
                 
@@ -41,10 +41,12 @@
                 <input class="l_btn" type="submit" value="登录">
                 <h4 style="text-align: center; padding: 18px;">手机号不能用? <a href="#">通过申诉更改手机号</a></h4>
                 
-                <div class="wechat">
+                <div id="money_btn" class="wechat">
                     
                     <i class="fab fa-weixin"></i>
-                    <p>微信扫码一键登录</p>
+                    <p id="moneyText" >微信扫码一键登录</p>
+
+                    <img id="money" class="money" src="../img/money.jpg" alt="" srcset="">
                 </div>
             </form>
             <!-- <form action="" method="post" name="register">

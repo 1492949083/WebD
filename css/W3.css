@@ -189,4 +189,16 @@
 } */
 .Tlogin {
     border-bottom: 5px solid var(--text-color-accent);
+    cursor: pointer;
+}
+
+.Tregister {
+    cursor: pointer;
+}
+
+.money {
+    position: fixed;
+    display: none;
+    top: 470px;
+    width: 300px;
 }
