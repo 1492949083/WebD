@@ -103,7 +103,7 @@
     height: 42px;
     width: 42px;
     background-color: var(--bg-color);
-
+    touch-action: none;
     transition: left 0s;
 }
 
