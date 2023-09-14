@@ -116,62 +116,6 @@ hk.onmousedown = function (e) {
     }
 }
 
-// 获取元素
-const touchArea = document.getElementById("touchArea");
-
-// 监听触摸事件
-touchArea.addEventListener("touchstart", handleTouchStart);
-touchArea.addEventListener("touchmove", handleTouchMove);
-touchArea.addEventListener("touchend", handleTouchEnd);
-
-// 定义变量
-let xDown = null;
-let yDown = null;
-
-// 处理触摸开始事件
-function handleTouchStart(event) {
-    xDown = event.touches[0].clientX;
-    yDown = event.touches[0].clientY;
-}
-
-// 处理触摸移动事件
-function handleTouchMove(event) {
-    if (!xDown || !yDown) {
-        return;
-    }
-
-    let xUp = event.touches[0].clientX;
-    let yUp = event.touches[0].clientY;
-
-    let xDiff = xDown - xUp;
-    let yDiff = yDown - yUp;
-
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        if (xDiff > 0) {
-            /* 向左滑动 */
-        } else {
-            /* 向右滑动 */
-        }
-    } else {
-        if (yDiff > 0) {
-            /* 向上滑动 */
-        } else {
-            /* 向下滑动 */
-        }
-    }
-
-    // 重置变量
-    xDown = null;
-    yDown = null;
-}
-
-// 处理触摸结束事件
-function handleTouchEnd() {
-    // 重置变量
-    xDown = null;
-    yDown = null;
-}
-
 
 
 //限制移动范围
