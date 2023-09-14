@@ -63,9 +63,10 @@
 }
 
 .hkBg {
+    
     position: absolute;
     margin: 10px;
-    left: 0px;
+    left: 4px;
     height: 40px;
     width: 0px;
     border-radius: 5px;
