@@ -167,10 +167,15 @@ input {
 }
 
 .linkIndex {
+    color: var(--text-color);
     right:  0px;
     margin: 5px;
     padding:7px;
     position: fixed;
     background-color: var(--gray-alpha);
     border-radius: 10px;
+}
+
+.linkIndex:hover {
+    background-color: var(--text-color-accent);
 }
