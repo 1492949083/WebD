@@ -22,11 +22,9 @@ body {
 .Abox {
     height: 100vh;
     width: auto;
-    background: var(--linear-gradient-bg-color);
-    
-    
-
-    
+    display: flex;
+    justify-content: center;
+    background: var(--linear-gradient-bg-color);    
 }
 
 img {
