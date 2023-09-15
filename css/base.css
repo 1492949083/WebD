@@ -193,17 +193,23 @@ img {
 
 
 
+
+#theme_btn {
+    cursor: pointer;
+}
+
 .themeSelector {
     position: fixed;
     display: flex;
     /* 默认水平排列,会自动折叠 */
     flex-wrap: wrap;
     justify-content: center;
+    
     bottom: 10vh;
     margin: 1vh;
     padding: 1vh;
-
-
+    opacity: 01;
+    
     /* 绝对定位居中 */
     left: 50%;
     transform: translateX(-50%);

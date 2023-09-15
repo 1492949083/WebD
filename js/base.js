@@ -7,7 +7,7 @@ const meta = document.querySelectorAll('meta')[1];
 const body = document.querySelector('body');
 // 构造要添加的HTML字符串
 const navBarHTML = `
-<div class="navBar">
+        <div class="navBar">
             <div class="leftBar">
                 <img src="/img/favicon.ico" alt="logo">
                 <a href="/index.html">首页</a>
@@ -37,6 +37,7 @@ const navBarHTML = `
                         </ul>
                     </li>
                 </ul>
+                <p id="theme_btn" href="">主题</p>
             </div>
             <div class="icon">
                 <a href="https://t.me/ccc007ccc" target="_blank">
@@ -48,6 +49,37 @@ const navBarHTML = `
                 <a href="https://github.com/1492949083/WebD" target="_blank">
                     <i id="github" class="fab fa-github"></i>
                 </a>
+            </div>
+        </div>
+
+        <div class="themeSelector">
+            <div class="button" id="theme0" onclick="thm0()">
+                <div class="colorBlock0">
+                    <div class="block1"></div>
+                    <div class="block2"></div>
+                </div>
+                <p>默认</p>
+            </div>
+            <div class="button" id="theme1" onclick="thm1()">
+                <div class="colorBlock1">
+                    <div class="block1"></div>
+                    <div class="block2"></div>
+                </div>
+                <p>配色1</p>
+            </div>
+            <div class="button" id="theme2" onclick="thm2()">
+                <div class="colorBlock2">
+                    <div class="block1"></div>
+                    <div class="block2"></div>
+                </div>
+                <p>配色2</p>
+            </div>
+            <div class="button" id="theme3" onclick="thm3()">
+                <div class="colorBlock3">
+                    <div class="block1"></div>
+                    <div class="block2"></div>
+                </div>
+                <p>配色3</p>
             </div>
         </div>
 `;
