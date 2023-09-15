@@ -31,6 +31,146 @@ img {
 }
 
 
+.navBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 100%;
+    background-color: var(--Dgray-alpha);
+    backdrop-filter: blur(30px);
+    z-index: 1;
+}
+
+.navBar img {
+    border-radius: 0.7vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    position: relative;
+    height: 3.5vh;
+    width: 3.5vh;
+}
+
+.leftBar {
+    position: relative;
+    padding-left: 1vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.leftBar a {
+    position: relative;
+    color: var(--text-color);
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 2.2vh;
+    border-left: 1px solid var(--gray-alpha);
+    border-right: 1px solid var(--gray-alpha);
+}
+
+.leftBar a:hover {
+    color: var(--text-color-accent);
+    font-size: 2.5vh;
+}
+
+.leftBar p {
+    position: relative;
+    color: var(--text-color);
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 2.2vh;
+    border-left: 1px solid var(--gray-alpha);
+    border-right: 1px solid var(--gray-alpha);
+}
+
+.leftBar p:hover {
+    color: var(--text-color-accent);
+    font-size: 2.5vh;
+}
+
+.leftBar p:focus {
+    color: var(--text-color-accent);
+    font-size: 2.5vh;
+}
+
+.leftBar ul {
+    position: fixed;
+    list-style-type: none;
+}
+
+.leftBar .p_ul {
+    padding-top: 1vh;
+}
+
+.leftBar li {
+}
+
+.leftBar .p_menu {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.icon {
+    position: relative;
+    padding-right: 0.5vh;
+}
+.icon * {
+    padding: 0.2vh;
+}
+
+#github {
+    position: relative;
+    font-size: 3.5vh;
+    color: var(--text-color);
+    opacity: 0.3;
+
+    transition: color 0.3s, opacity 1s;
+}
+
+#github:hover {
+    color: var(--text-color-accent);
+    opacity: 1;
+}
+
+#tg {
+    position: relative; 
+    font-size: 3.5vh;
+    color: var(--text-color);
+    opacity: 0.3;
+
+    transition: color 0.3s, opacity 1s;
+}
+
+#tg:hover {
+    color: var(--text-color-accent);
+    opacity: 1;
+}
+
+#gitee {
+    position: relative; 
+    font-size: 3.5vh;
+    color: var(--text-color);
+    opacity: 0.3;
+
+    transition: color 0.3s, opacity 1s;
+}
+
+#gitee:hover {
+    color: var(--text-color-accent);
+    opacity: 1;
+}
+
+
 
 .themeSelector {
     position: fixed;

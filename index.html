@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="/css/theme.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
     <title>Web课作业</title>
 </head>
 
 <body>
     <div class="Abox">
-        <div class="icon">
-            <a href="https://github.com/1492949083/WebD" target="_blank">
-                <i id="github" class="fab fa-github"></i>
-            </a>
-            <a href="https://t.me/ccc007ccc" target="_blank">
-                <i id="tg" class="fab fa-telegram"></i>
-            </a>
-            <a href="https://gitee.com/ccc007ccc/WebD" target="_blank">
-                <i id="gitee" class="iconfont icon-gitee"></i> 
-            </a>
+        <div class="navBar">
+            <div class="leftBar">
+                <img src="/img/favicon.ico" alt="logo">
+                <a href="/index.html">首页</a>
+                <ul class="p_menu" id="menu">
+                    <li>
+                        <a href="#">项目</a>
+                        <ul class="p_ul">
+                            <li><a href="#">二级菜单1</a></li>
+                            <li><a href="#">二级菜单2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a href="https://t.me/ccc007ccc" target="_blank">
+                    <i id="tg" class="fab fa-telegram"></i>
+                </a>
+                <a href="https://gitee.com/ccc007ccc/WebD" target="_blank">
+                    <i id="gitee" class="iconfont icon-gitee"></i>
+                </a>
+                <a href="https://github.com/1492949083/WebD" target="_blank">
+                    <i id="github" class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
+
         <div class="indexBox">
             <h1>作业索引</h1>
-            
         </div>
 
         <div class="themeSelector">
@@ -65,9 +75,9 @@
 
 
 
-    
-    <script src="/js/index.js" async defer></script>
-    <script src="/js/base.js" async defer></script>
+
+    <script src="/js/index.js" async></script>
+    <script src="/js/base.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,32 @@
 const root = document.documentElement;
+// 获取Abox元素
+const Abox = document.querySelector('.Abox');
+// 获取第二个 meta 元素
+const meta = document.querySelectorAll('meta')[1];
+//获取body元素
+const body = document.querySelector('body');
+// 构造要添加的HTML字符串
+const navBarHTML = `
+`;
+
+const link = `
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/index.css">
+`
+
+
+
+document.write('<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>');
+document.write('<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>');
+document.write('<script src="/js/navBar.js" type="text/javascript" charset="utf-8"></script>');
+
+// 将HTML添加到Abox中
+Abox.insertAdjacentHTML('afterbegin', navBarHTML);
+meta.insertAdjacentHTML('afterend', link);
+
 // 改变 颜色 变量
 // 默认配色
 // root.style.setProperty('--bg-color', 'rgb(34, 34, 49)');

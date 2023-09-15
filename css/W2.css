@@ -22,9 +22,3 @@ ol {
     padding: 1vw;
     margin: 1vw;
 }
-
-.Abox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
