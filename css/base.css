@@ -43,6 +43,7 @@ img {
     background-color: var(--Dgray-alpha);
     backdrop-filter: blur(30px);
     z-index: 1;
+    transition: backdrop-filter 0s;
 }
 
 .navBar img {
