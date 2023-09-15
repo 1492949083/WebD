@@ -101,12 +101,24 @@ img {
     list-style-type: none;
 }
 
-.leftBar .p_ul {
-    padding-top: 1vh;
+.leftBar .p_ul1 {
+    margin-top: 1vh;
+    text-align: center;
 }
 
-.leftBar li {
+.leftBar .p_ul1 a {
+    border-left: 0px solid var(--gray-alpha);
+    border-right: 0px solid var(--gray-alpha);
 }
+.leftBar .p_ul1 li {
+    position: relative;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 2.2vh;
+    border-left: 1px solid var(--gray-alpha);
+    border-right: 1px solid var(--gray-alpha);
+}
+
 
 .leftBar .p_menu {
 
