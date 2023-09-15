@@ -167,3 +167,12 @@ img {
 input {
     background-color: var(--linear-gradient-bg-color);
 }
+
+.linkIndex {
+    right:  0px;
+    margin: 5px;
+    padding:7px;
+    position: fixed;
+    background-color: var(--gray-alpha);
+    border-radius: 10px;
+}
