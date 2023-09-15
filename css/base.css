@@ -22,8 +22,6 @@ body {
 .Abox {
     height: 100vh;
     width: auto;
-    display: flex;
-    justify-content: center;
     background: var(--linear-gradient-bg-color);    
 }
 
@@ -163,7 +161,7 @@ img {
 
 
 input {
-    background-color: var(--linear-gradient-bg-color);
+    background-color: var(--gray-alpha);
 }
 
 .linkIndex {
