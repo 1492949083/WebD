@@ -6,9 +6,15 @@
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: rgb(253, 237, 202);
     --text-color-accent: rgb(255, 201, 120);
+    /* 灰色 */
+    --gray-25: rgb(192, 192, 192);
+    --gray-50: rgb(128, 128, 128);
+    --gray-75: rgb(64, 64, 64);
     /* 半透明 */
+    --Lgray-alpha: rgba(192, 192, 192, 0.5);
     --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
+    --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
 }
 .theme1 {
     /* 暗色 */
@@ -18,6 +24,10 @@
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: #fff;
     --text-color-accent: #ff9f53;
+    /* 灰色 */
+    --gray-25: rgb(192, 192, 192);
+    --gray-50: rgb(128, 128, 128);
+    --gray-75: rgb(64, 64, 64);
     /* 半透明 */
     --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
@@ -29,6 +39,10 @@
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: #52565e;
     --text-color-accent: #F2987D;
+    /* 灰色 */
+    --gray-25: rgb(192, 192, 192);
+    --gray-50: rgb(128, 128, 128);
+    --gray-75: rgb(64, 64, 64);
     /* 半透明 */
     --gray-alpha: rgba(128, 128, 128, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
@@ -40,6 +54,10 @@
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
     --text-color: #52565e;
     --text-color-accent: #80d1c8;
+    /* 灰色 */
+    --gray-25: rgb(192, 192, 192);
+    --gray-50: rgb(128, 128, 128);
+    --gray-75: rgb(64, 64, 64);
     /* 半透明 */
     --gray-alpha: rgba(128, 128, 128, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);

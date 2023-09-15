@@ -98,7 +98,15 @@ img {
 
 .leftBar ul {
     position: fixed;
+    display: flex;
     list-style-type: none;
+    flex-direction: column;
+}
+
+.leftBar ul a {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 2.2vh;
 }
 
 .leftBar .p_ul1 {
@@ -117,6 +125,7 @@ img {
     font-size: 2.2vh;
     border-left: 1px solid var(--gray-alpha);
     border-right: 1px solid var(--gray-alpha);
+    background-color: var(--Dgray-alpha-35);
 }
 
 

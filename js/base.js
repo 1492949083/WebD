@@ -7,6 +7,49 @@ const meta = document.querySelectorAll('meta')[1];
 const body = document.querySelector('body');
 // 构造要添加的HTML字符串
 const navBarHTML = `
+<div class="navBar">
+            <div class="leftBar">
+                <img src="/img/favicon.ico" alt="logo">
+                <a href="/index.html">首页</a>
+                <ul class="p_menu" id="menu">
+                    <li>
+                        <p id="p" href="">项目</p>
+                        <ul id="p_ul1" class="p_ul1">
+                            <li class="p_li1">
+                                <a class="p_li1_a" href="#">上学期作业</a>
+                                <ul class="p_ul2">
+                                    <li><a href="//sweb.mc8.me">Simple-Web</a></li>
+                                    <li><a href="//github.com/1492949083/TurnBasedGenshin">回合制原神</a></li>
+                                    <li><a href="https://github.com/1492949083/PingPongWinRateCalculator">乒乓球胜率计算器</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">github项目</a>
+                                <ul>
+                                    <li><a href="https://github.com/1492949083/script_c-">c++自动点击</a></li>
+                                    <li><a href="https://github.com/1492949083/AutoClick">Python自动点击</a></li>
+                                    <li><a href="https://github.com/1492949083/AudioDurationCalculator">音频时长总和计算器</a></li>
+                                    <li><a href="https://github.com/1492949083/PingPongWinRateCalculator">乒乓球胜率计算器</a></li>
+                                    <li><a href="https://github.com/1492949083/ProgramController">程序控制器</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="//bc.mc8.me">进制转换器(在做)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a href="https://t.me/ccc007ccc" target="_blank">
+                    <i id="tg" class="fab fa-telegram"></i>
+                </a>
+                <a href="https://gitee.com/ccc007ccc/WebD" target="_blank">
+                    <i id="gitee" class="iconfont icon-gitee"></i>
+                </a>
+                <a href="https://github.com/1492949083/WebD" target="_blank">
+                    <i id="github" class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
 `;
 
 const link = `
@@ -36,32 +79,32 @@ meta.insertAdjacentHTML('afterend', link);
 // root.style.setProperty('--text-color-accent', 'rgb(255, 201, 120)');
 // base.js
 
-const themes = {
-    theme0: {
-        '--bg-color': 'rgb(34, 34, 49)',
-        '--bg-Dcolor': 'rgb(17, 17, 36)',
-        '--text-color': 'rgb(253, 237, 202)',
-        '--text-color-accent': 'rgb(255, 201, 120)',
-    },
-    theme1: {
-        '--bg-color': '#1e2d39',
-        '--bg-Dcolor': '#0f1a23',
-        '--text-color': '#fff',
-        '--text-color-accent': '#ff9f53',
-    },
-    theme2: {
-        '--bg-color': '#C1DBDA',
-        '--bg-Dcolor': '#5B9391',
-        '--text-color': '#52565e',
-        '--text-color-accent': '#F2987D',
-    },
-    theme3: {
-        '--bg-color': '#f8f5d6',
-        '--bg-Dcolor': '#D5D0A1',
-        '--text-color': '#52565e',
-        '--text-color-accent': '#80d1c8',
-    },
-};
+// const themes = {
+//     theme0: {
+//         '--bg-color': 'rgb(34, 34, 49)',
+//         '--bg-Dcolor': 'rgb(17, 17, 36)',
+//         '--text-color': 'rgb(253, 237, 202)',
+//         '--text-color-accent': 'rgb(255, 201, 120)',
+//     },
+//     theme1: {
+//         '--bg-color': '#1e2d39',
+//         '--bg-Dcolor': '#0f1a23',
+//         '--text-color': '#fff',
+//         '--text-color-accent': '#ff9f53',
+//     },
+//     theme2: {
+//         '--bg-color': '#C1DBDA',
+//         '--bg-Dcolor': '#5B9391',
+//         '--text-color': '#52565e',
+//         '--text-color-accent': '#F2987D',
+//     },
+//     theme3: {
+//         '--bg-color': '#f8f5d6',
+//         '--bg-Dcolor': '#D5D0A1',
+//         '--text-color': '#52565e',
+//         '--text-color-accent': '#80d1c8',
+//     },
+// };
 
 function changeTheme(theme) {
     document.documentElement.className = theme;
