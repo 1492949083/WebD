@@ -133,13 +133,25 @@ function limitHk(x) {
 
 var click = false;
 //点击money_btn出现money
+// 在这里暂停0.5秒钟
+setTimeout(function() {}, 500);
+
 money_btn.onclick = function () {
     if (click == false) {
-        money.style.display = "block";
+        money.style.height = "300px";
+        money.style.width = "300px";
+        money.style.opacity = 1;
+
         moneyText.style.display = "none";
         click = true;
     } else {
-        money.style.display = "none";
+        money.style.width = "0px";
+        money.style.height = "0px";
+        money.style.opacity = 0;
+        // 在这里暂停0.5秒钟
+        setTimeout(function() {}, 500);
+
+
         moneyText.style.display = "block";
         click = false;
     }
