@@ -211,7 +211,7 @@ img {
     margin: 1vh;
     padding: 1vh;
     opacity: 01;
-    
+    z-index: 5;
     /* 绝对定位居中 */
     left: 50%;
     transform: translateX(-50%);

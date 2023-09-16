@@ -16,7 +16,7 @@ const navBarHTML = `
                         <p id="p" href="">项目</p>
                         <ul id="p_ul1" class="p_ul1">
                             <li class="p_li1">
-                                <a class="p_li1_a" href="#">上学期作业</a>
+                                <a class="p_li1_a" href="javascript:void(0);">上学期作业</a>
                                 <ul class="p_ul2">
                                     <li><a href="//sweb.mc8.me">Simple-Web</a></li>
                                     <li><a href="//github.com/1492949083/TurnBasedGenshin">回合制原神</a></li>
@@ -24,7 +24,7 @@ const navBarHTML = `
                                 </ul>
                             </li>
                             <li>
-                                <a href="">github项目</a>
+                                <a href="javascript:void(0);">github项目</a>
                                 <ul>
                                     <li><a href="https://github.com/1492949083/script_c-">c++自动点击</a></li>
                                     <li><a href="https://github.com/1492949083/AutoClick">Python自动点击</a></li>

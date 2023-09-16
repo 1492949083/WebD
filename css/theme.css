@@ -29,8 +29,10 @@
     --gray-50: rgb(128, 128, 128);
     --gray-75: rgb(64, 64, 64);
     /* 半透明 */
+    --Lgray-alpha: rgba(192, 192, 192, 0.5);
     --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
+    --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
 }
 .theme2 {
     /* 亮色 */
@@ -44,8 +46,10 @@
     --gray-50: rgb(128, 128, 128);
     --gray-75: rgb(64, 64, 64);
     /* 半透明 */
-    --gray-alpha: rgba(128, 128, 128, 0.1);
+    --Lgray-alpha: rgba(192, 192, 192, 0.5);
+    --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
+    --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
 }
 .theme3 {
     /* 亮色 */
@@ -59,6 +63,8 @@
     --gray-50: rgb(128, 128, 128);
     --gray-75: rgb(64, 64, 64);
     /* 半透明 */
-    --gray-alpha: rgba(128, 128, 128, 0.1);
+    --Lgray-alpha: rgba(192, 192, 192, 0.5);
+    --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
+    --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
 }
