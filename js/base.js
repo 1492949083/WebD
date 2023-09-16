@@ -24,6 +24,9 @@ const navBarHTML = `
                                 </ul>
                             </li>
                             <li>
+                                <a href="//mc8.me">这学期作业</a>
+                            </li>
+                            <li>
                                 <a href="javascript:void(0);">github项目</a>
                                 <ul>
                                     <li><a href="https://github.com/1492949083/script_c-">c++自动点击</a></li>
