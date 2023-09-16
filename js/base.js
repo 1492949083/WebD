@@ -84,23 +84,46 @@ const navBarHTML = `
         </div>
 `;
 
-const link = `
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/theme.css">
-<link rel="stylesheet" href="/css/index.css">
-`
+function isLocal(local) {
+    if (local == true) {
+        const link = `
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
+        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="/css/theme.css">
+        `
+        
+        
+        
+        document.write('<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>');
+        document.write('<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>');
+        document.write('<script src="/js/navBar.js" type="text/javascript" charset="utf-8"></script>');
+        
+        // 将HTML添加到Abox中
+        Abox.insertAdjacentHTML('afterbegin', navBarHTML);
+        meta.insertAdjacentHTML('afterend', link);    
+    } else {
+        const link = `
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
+    <link rel="stylesheet" href="//mc8.me/css/base.css">
+    <link rel="stylesheet" href="//mc8.me/css/theme.css">
+    `
+    
+    
+    
+    document.write('<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>');
+    document.write('<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>');
+    document.write('<script src="//mc8.me/js/navBar.js" type="text/javascript" charset="utf-8"></script>');
+    
+    // 将HTML添加到Abox中
+    Abox.insertAdjacentHTML('afterbegin', navBarHTML);
+    meta.insertAdjacentHTML('afterend', link);
+    }
+}    
+    
 
-
-
-document.write('<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>');
-document.write('<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>');
-document.write('<script src="/js/navBar.js" type="text/javascript" charset="utf-8"></script>');
-
-// 将HTML添加到Abox中
-Abox.insertAdjacentHTML('afterbegin', navBarHTML);
-meta.insertAdjacentHTML('afterend', link);
+isLocal(true)
 
 // 改变 颜色 变量
 // 默认配色
