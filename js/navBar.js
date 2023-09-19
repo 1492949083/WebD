@@ -1,4 +1,5 @@
 
+
 // 初始化菜单
 $("#menu").menu();
 
@@ -18,19 +19,28 @@ $("#menu > li > .p_ul1").menu({
 const theme_btn = document.getElementById("theme_btn");
 const themeSelector = document.querySelector(".themeSelector");
 
-$(".themeSelector").hide();
 var click = false;
 //点击theme_btn出现themeSelector
-// 在这里暂停0.5秒钟
 //监听点击
 theme_btn.onclick = function () {
     if (click == false) {
-        $(".themeSelector").show(200,'swing');
+
+        changeCSS(".themeSelector", "left", "0vh");
+        changeCSS(".themeSelector", "opacity", "1");
 
         click = true;
     } else {
 
-        $(".themeSelector").hide(200,'swing');
+        changeCSS(".themeSelector", "left", "-15vh");
+        changeCSS(".themeSelector", "opacity", "0");
         click = false;
     }
 }
+
+$('.themeSelector').hide();
+//页面加载之后执行
+$(document).ready(function () {
+    
+    $('.themeSelector').show();
+});
+

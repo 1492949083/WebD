@@ -100,6 +100,7 @@ function isLocal(local) {
         document.write('<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>');
         document.write('<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>');
         document.write('<script src="/js/navBar.js" type="text/javascript" charset="utf-8"></script>');
+        document.write('<script src="/js/tools.js" type="text/javascript" charset="utf-8"></script>');
         
         // 将HTML添加到Abox中
         Abox.insertAdjacentHTML('afterbegin', navBarHTML);
