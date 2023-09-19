@@ -32,7 +32,6 @@ const navBarHTML = `
                                     <li><a href="https://github.com/1492949083/script_c-">c++自动点击</a></li>
                                     <li><a href="https://github.com/1492949083/AutoClick">Python自动点击</a></li>
                                     <li><a href="https://github.com/1492949083/AudioDurationCalculator">音频时长总和计算器</a></li>
-                                    <li><a href="https://github.com/1492949083/PingPongWinRateCalculator">乒乓球胜率计算器</a></li>
                                     <li><a href="https://github.com/1492949083/ProgramController">程序控制器</a></li>
                                 </ul>
                             </li>
