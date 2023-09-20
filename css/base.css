@@ -19,6 +19,42 @@ body {
     transition: backeround-color 0.5s;
 }
 
+input {
+    margin: 1vh 0vh 1vh 0vh;
+    padding: 1vh;
+    width: 25vw;
+    height: 4vh;
+    border-radius: 1vh;
+    border: 1px solid var(--gray-alpha);
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(15px);
+}
+
+input:focus {
+    border: 2px solid var(--text-color-accent);
+    box-shadow: 0 0 8px 0 var(--gray-alpha);
+
+    background-color: var(--gray-alpha);
+}
+
+button {
+    margin: 1vw 0vh 1vw 0vh;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: var(--gray-alpha);
+    border: 1px solid var(--gray-alpha);
+    outline: none;
+    backdrop-filter: blur(15px);
+}
+
+button:hover {
+    color: var(--bg-Dcolor);
+    background-color: var(--text-color-accent);
+    border: 1px solid var(--text-color-accent);
+}
+
 .Abox {
     height: 100vh;
     width: auto;
@@ -41,9 +77,8 @@ img {
     padding-bottom: 1vh;
     width: 100%;
     background-color: var(--Dgray-alpha);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
     z-index: 1;
-    transition: backdrop-filter 0s;
 }
 
 .navBar img {
@@ -218,7 +253,7 @@ img {
     width: 11vh;
     background-color: var(--Dgray-alpha);
     border-radius: 1.9vh;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
 }
 
 .themeSelector .button p {

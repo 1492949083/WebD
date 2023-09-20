@@ -1,0 +1,38 @@
+.Abox {
+    background-image: url(../img/bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.loginForm {
+    display: flex;
+    position: absolute;
+    right: 10vw;
+    /* 绝对位置垂直居中 */
+    top: 50%;
+    transform: translate(0%, -50%);
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginBox_btn button {
+    margin: 1vh 2vw 0vw 2vw;
+}
+
+.gd {
+    border: 1px solid var(--gray-50);
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    height:5vh;
+    backdrop-filter: blur(15px);
+    transition: 0.6s;
+}
+
+.gd:hover {
+    border: 1px solid var(--text-color-accent);
+    height: 10vh;
+    color: var(--bg-Dcolor);
+    background-color: var(--Dgray-alpha-35);
+}
