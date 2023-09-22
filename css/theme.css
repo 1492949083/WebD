@@ -15,6 +15,7 @@
     --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
+    --black-alpha: rgba(0, 0, 0, 0.5);
 }
 .theme1 {
     /* 暗色 */
@@ -33,6 +34,7 @@
     --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
+    --black-alpha: rgba(0, 0, 0, 0.5);
 }
 .theme2 {
     /* 亮色 */
@@ -50,6 +52,7 @@
     --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
+    --black-alpha: rgba(0, 0, 0, 0.5);
 }
 .theme3 {
     /* 亮色 */
@@ -67,4 +70,5 @@
     --gray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
+    --black-alpha: rgba(0, 0, 0, 0.5);
 }

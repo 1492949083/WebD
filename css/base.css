@@ -101,8 +101,8 @@ img {
 .leftBar a {
     position: relative;
     color: var(--text-color);
-    padding-left: 3vh;
-    padding-right: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
     font-size: 2.2vh;
     border-left: 1px solid var(--gray-alpha);
     border-right: 1px solid var(--gray-alpha);
@@ -116,8 +116,8 @@ img {
 .leftBar p {
     position: relative;
     color: var(--text-color);
-    padding-left: 3vh;
-    padding-right: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
     font-size: 2.2vh;
     border-left: 1px solid var(--gray-alpha);
     border-right: 1px solid var(--gray-alpha);
