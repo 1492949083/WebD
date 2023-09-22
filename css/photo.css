@@ -1,0 +1,40 @@
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photoBox img {
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 1vw;
+    background-color: var(--Lgray-alpha);
+
+}
+
+#photoBox img:hover {
+    opacity: 0.7;
+    width: 205px;
+}
+
+#photoBox {
+    position: relative;
+    
+    
+}
+
+
+
+.item {
+    float: left;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

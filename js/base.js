@@ -40,6 +40,7 @@ const navBarHTML = `
                     </li>
                 </ul>
                 <p id="theme_btn" href="">主题</p>
+                <a href="/w/photo.html">图库</a>
             </div>
             <div class="icon">
                 <a href="https://t.me/ccc007ccc" target="_blank">
