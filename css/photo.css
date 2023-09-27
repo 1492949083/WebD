@@ -29,7 +29,7 @@
     background-color: var(--Lgray-alpha);
     border-radius: 3vh;
     overflow: hidden;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(4vh);
     box-shadow: 0 10px 3vh var(--black-alpha);
 }
 
