@@ -1,68 +1,91 @@
-// window.addEventListener("load", function () {
-//     waterFall('photoBox', 'item');
-// })
-// 页面加载完成
+//将每个图片的详细信息写在这里,实现切换图片同时切换详细信息,如光圈,快门速度,ISO等   图片1,图片2这样保存
 
-$(function () {
-    // 瀑布流布局
-    waterFall('#photoBox', '.item');
-    // 滚动加载
-    $(window).scroll(function () {
-        // 获取最后一个盒子
-        var lastBox = $('#photoBox').children('div').last();
-        // 获取最后一个盒子的高度
-        var lastBoxDis = lastBox.offset().top + Math.floor(lastBox.outerHeight() / 2);
-        // 获取文档高度
-        var documentH = $(document).width();
-        // 获取滚动高度
-        var scrollH = $(window).scrollTop();
-        // 判断是否具备加载条件
-        return lastBoxDis < documentH + scrollH ? true : false;
-    }) ? loadImg() : null;
-    
-})
-// 监听窗口的改变结束后执行
-$(window).resize(function () {
-    waterFall('#photoBox', '.item');
-})
+var photo = [
+    {   //图片1
+        "title": "图片1",
+        "time": "2021/7/8 19:44",
+        "fnumber": "f/1.9",
+        "shutter": "1/333",
+        "ISO": "ISO50",
+        "device": "Mi 10 Pro"
+    },
+];
 
 
+var title = $(".title");
+var time = $(".time");
+var fnumber = $(".fnumber");
+var shutter = $(".shutter");
+var ISO = $(".ISO");
+var device = $(".device");
+
+title.text(photo[0].title);
+time.text(photo[0].time);
+fnumber.text(photo[0].fnumber);
+shutter.text(photo[0].shutter);
+ISO.text(photo[0].ISO);
+device.text(photo[0].device);
 
 
-function waterFall(father, child) {
-    // 获取父盒子
-    var fatherBox = $(father);
-    // 获取子盒子
-    var childBox = fatherBox.children(child);
-    // 获取子盒子宽度
-    var childWidth = childBox.outerWidth();
-    // 获取父盒子宽度
-    var fatherWidth = fatherBox.width();
-    // 获取列数
-    var cols = Math.floor(fatherWidth / childWidth);
-    // 定义高度数组
-    var heightArr = [];
-    // 遍历子盒子
-    childBox.each(function (index, value) {
-        // 获取每个子盒子的高度
-        var childHeight = childBox.eq(index).outerHeight();
-        if (index < cols) {
-            // 存储第一行的盒子高度
-            heightArr[index] = childHeight;
-        } else {
-            // 获取最小高度
-            var minBoxHeight = Math.min.apply(null, heightArr);
-            // 获取最小高度的索引
-            var minBoxIndex = $.inArray(minBoxHeight, heightArr);
-            // 设置子盒子的样式
-            $(value).css({
-                'position': 'absolute',
-                'top': minBoxHeight + 'px',
-                'left': minBoxIndex * childWidth + 'px'
-            })
-            // 更新高度数组
-            heightArr[minBoxIndex] += childHeight;
+//滑动时切换img 的src 与Abox背景图片 (二者共用一个数组)
+var img = $(".img");
+// var Abox = $(".Abox"); Abox 已被声明在base.js中
+
+var imgSrc = [
+    "../img/photo/img1.jpg",
+    "../img/photo/img2.jpg",
+    "../img/photo/img3.jpg",
+    "../img/photo/img4.jpg",
+    "../img/photo/img5.jpg",
+    "../img/photo/img6.jpg",
+    "../img/photo/img7.jpg",
+    "../img/photo/img8.jpg",
+];
+
+//不用AboxSrc
+
+var index = 0;
+
+//滚轮滚动两次才能切换一次图片
+var scroll = 0;
+
+//滚轮滚动时切换图片
+$(window).on("mousewheel", function (e) {
+    // console.log(e.originalEvent.wheelDelta);
+    // console.log(scroll);
+    if (e.originalEvent.wheelDelta < 0) {
+        scroll++;
+        if (scroll == 2) {
+            scroll = 0;
+            index++;
+            if (index > imgSrc.length - 1) {
+                index = 0;
+            }
+            img.attr("src", imgSrc[index]);
+            Abox.css("background-image", "url(" + imgSrc[index] + ")");
+            title.text(photo[index].title);
+            time.text(photo[index].time);
+            fnumber.text(photo[index].fnumber);
+            shutter.text(photo[index].shutter);
+            ISO.text(photo[index].ISO);
+            device.text(photo[index].device);
         }
-    })
-
-}
+    } else {
+        scroll--;
+        if (scroll == -2) {
+            scroll = 0;
+            index--;
+            if (index < 0) {
+                index = imgSrc.length - 1;
+            }
+            img.attr("src", imgSrc[index]);
+            Abox.css("background-image", "url(" + imgSrc[index] + ")");
+            title.text(photo[index].title);
+            time.text(photo[index].time);
+            fnumber.text(photo[index].fnumber);
+            shutter.text(photo[index].shutter);
+            ISO.text(photo[index].ISO);
+            device.text(photo[index].device);
+        }
+    }
+});
