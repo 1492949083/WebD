@@ -1,10 +1,14 @@
+:root {
+    --imgPath: url(../img/photo/img1.jpg);
+}
 
 .box {
     display: flex;
     justify-content: center;
 }
 
-img {
+#photoBox img {
+    content: var(--imgPath);
     width: auto;
     height: 100%;
     border-radius: 0;
@@ -39,7 +43,7 @@ img {
 }
 
 .Abox {
-    background-image: url(../img/photo/img1.jpg);
+    background-image: var(--imgPath);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
