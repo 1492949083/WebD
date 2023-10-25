@@ -42,6 +42,16 @@ const navBarHTML = `
                 <p id="theme_btn" href="">主题</p>
                 <a href="/w/photo.html">我的照片</a>
             </div>
+            <div class="palestineBox">
+                <div class="support-palestine__flag" role="img" aria-label="Flag of palestine">
+                    <div class="background">
+                        <div class="top"></div>
+                        <div class="middle"></div>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+                <div class="support-palestine__label">Support Palestine</div>
+            </div>
             <div class="icon">
                 <a href="https://t.me/ccc007ccc" target="_blank">
                     <i id="tg" class="fab fa-telegram"></i>
@@ -94,6 +104,7 @@ function isLocal(local) {
         <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
         <link rel="stylesheet" href="/css/base.css">
         <link rel="stylesheet" href="/css/theme.css">
+        <link rel="stylesheet" href="/css/palestine.css">
         `
         
         
