@@ -9,9 +9,29 @@
 
 <body>
     <div class="Abox">
+        <ul>
+            <li onclick='next(this)'>导航一</li>
+            <li style="display: none">
+                <a href="">主页</a>
+            </li>
+            <li onclick="next(this)">导航二</li>
+            <li style="display: none">
+                <a href="">主页</a>
+            </li>
+        </ul>
         
     </div>
     <script src="/js/base.js"></script>
+    <script>
+        function next(thisa) {
+            nextNode = thisa.nextElementSibling;
+            if(nextNode.style.display='none'){
+                nextNode.style.display='block';
+            }else{
+                nextNode.style.display='none';
+            }
+        }
+    </script>
 </body>
 
 </html>
