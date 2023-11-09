@@ -50,7 +50,7 @@ const navBarHTML = `
                         <div class="triangle"></div>
                     </div>
                 </div>
-                <div class="support-palestine__label"><p>Support Palestine</p></div>
+                <div class="support-palestine__label"><a href="https://the-palestinian-side.vercel.app/resources">Support Palestine</a></div>
             </div>
             <div class="icon">
                 <a href="https://t.me/ccc007ccc" target="_blank">
