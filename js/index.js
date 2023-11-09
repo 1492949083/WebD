@@ -1,11 +1,10 @@
 // 获取作业目录下的所有HTML文件
 const homeworkFiles = [
-    { name: "作业1", date: "2023/9/6", url: "./w/W1.html" },
-    { name: "作业2", date: "2023/9/8", url: "./w/W2.html" },
-    { name: "作业3", date: "2023/9/13", url: "./w/W3.html" },
-    // { name: "作业4", date: "2023/9/20", url: "./w/W4.html" },
-    { name: "作业4", date: "2023/9/27", url: "./w/photo.html" },
-    { name: "作业5", date: "2023/11/8", url: "./w/W5.html" },
+    { name: "作业1", date: "2023/9/6", url: "./w/W1.html", note: "(各种路径和文本标签)" },
+    { name: "作业2", date: "2023/9/8", url: "./w/W2.html", note: "(画表格)" },
+    { name: "作业3", date: "2023/9/13", url: "./w/W3.html", note: "(登录页面)" },
+    { name: "作业4", date: "2023/9/27", url: "./w/photo.html", note: "(阴影，圆角...的使用)" },
+    { name: "作业5", date: "2023/11/8", url: "./w/W5.html", note: "(导航条)" },
   ];
   
   // 找到最新的作业
@@ -31,6 +30,8 @@ const homeworkFiles = [
     link.href = homework.url;
     link.appendChild(linkText);
     linkElement.appendChild(link);
+    noteText = document.createTextNode(`${homework.note}`)
+    linkElement.appendChild(noteText)
   
     // 如果是最新作业，添加标记
     if (homework === newestHomework) {
