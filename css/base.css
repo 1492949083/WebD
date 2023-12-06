@@ -112,6 +112,11 @@ img {
     font-size: 2.5vh;
 }
 
+.leftBar a:hover i {
+    color: var(--text-color-accent);
+    font-size: 2.5vh;
+}
+
 .leftBar p {
     position: relative;
     color: var(--text-color);
@@ -123,6 +128,11 @@ img {
 }
 
 .leftBar p:hover {
+    color: var(--text-color-accent);
+    font-size: 2.5vh;
+}
+
+.leftBar p:hover i{
     color: var(--text-color-accent);
     font-size: 2.5vh;
 }

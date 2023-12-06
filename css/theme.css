@@ -1,3 +1,4 @@
+/* 时间久了才发现这样写太傻了,很难调整颜色并且使每个主题观感一致,下次写这种还是用别的方法吧 */
 
 .theme0 {
     /* 暗色 */
@@ -16,6 +17,7 @@
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
     --black-alpha: rgba(0, 0, 0, 0.5);
+    --black-alpha-35: rgba(0, 0, 0, 0.35);
 }
 .theme1 {
     /* 暗色 */
@@ -35,6 +37,7 @@
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
     --black-alpha: rgba(0, 0, 0, 0.5);
+    --black-alpha-35: rgba(0, 0, 0, 0.35);
 }
 .theme2 {
     /* 亮色 */
@@ -53,6 +56,7 @@
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
     --black-alpha: rgba(0, 0, 0, 0.5);
+    --black-alpha-35: rgba(0, 0, 0, 0.35);
 }
 .theme3 {
     /* 亮色 */
@@ -71,4 +75,5 @@
     --Dgray-alpha: rgba(0, 0, 0, 0.16);
     --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
     --black-alpha: rgba(0, 0, 0, 0.5);
+    --black-alpha-35: rgba(0, 0, 0, 0.35);
 }

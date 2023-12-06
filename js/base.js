@@ -10,10 +10,10 @@ const navBarHTML = `
         <div class="navBar">
             <div class="leftBar">
                 <img src="/img/favicon.ico" alt="logo">
-                <a href="/index.html">首页</a>
+                <a href="/index.html"><i class="fa-solid fa-house"></i> 首页</a>
                 <ul class="p_menu" id="menu">
                     <li>
-                        <p id="p" href="">项目</p>
+                        <p id="p" href=""><i class="fa-solid fa-box"></i> 存储库</p>
                         <ul id="p_ul1" class="p_ul1">
                             <li class="p_li1">
                                 <a class="p_li1_a" href="javascript:void(0);">上学期作业</a>
@@ -35,12 +35,12 @@ const navBarHTML = `
                                     <li><a href="https://github.com/1492949083/ProgramController">程序控制器</a></li>
                                 </ul>
                             </li>
-                            <li><a href="//bc.mc8.me">进制转换器(在做)</a></li>
+                            <li><a href="/w/BaseConverter.html">进制转换器(在做)</a></li>
                         </ul>
                     </li>
                 </ul>
-                <p id="theme_btn" href="">主题</p>
-                <a href="/w/photo.html">我的照片</a>
+                <p id="theme_btn" href=""><i class="fa-solid fa-shirt"></i> 主题</p>
+                <a href="/w/photo.html"><i class="fa-solid fa-images"></i> 我的影集</a>
             </div>
             <div class="palestineBox">
                 <div class="support-palestine__flag" role="img" aria-label="Flag of palestine">
@@ -100,7 +100,7 @@ const navBarHTML = `
 function isLocal(local) {
     if (local == true) {
         const link = `
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
         <link rel="stylesheet" href="/css/base.css">
         <link rel="stylesheet" href="/css/theme.css">

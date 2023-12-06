@@ -1,0 +1,54 @@
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 垂直排列 */
+    flex-direction: column;
+    
+}
+
+.selectBox {
+    height: 90%;
+    width: 90%;
+    top: -100vh;
+    background-color: var(--Lgray-alpha);
+    backdrop-filter: blur(3vh);
+    border-radius: 3vh;
+    box-shadow: 0 0 3vh 0 var(--Dgray-alpha-35);
+    position: fixed;
+    /* 透明 */
+    opacity: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s cubic-bezier(1,0,.6,1.23);
+}
+
+.selectBox .cancel {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    font-size: 5vh;
+    color: var(--gray-75);
+    cursor: pointer;
+}
+
+.selectBox .cancel:hover {
+    color: var(--text-color-accent);
+}
+
+.selectBox p {
+    padding: 1vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 4vh;
+    width: 95%;
+    background-color: var(--Dgray-alpha);
+    border-radius: 1vh;
+}
+.selectBox p:hover {
+    background-color: var(--black-alpha-35);
+    cursor: pointer;
+}
