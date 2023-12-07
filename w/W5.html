@@ -11,7 +11,7 @@
             align-items: center;
             flex-direction: column;
         }
-        li {
+        .box li {
             font-size: 5vh;
             cursor:pointer;
             background-color: var(--gray-alpha);
@@ -25,16 +25,18 @@
 
 <body>
     <div class="Abox">
-        <ul>
-            <li onclick='next(this)'>导航一</li>
-            <li style="display: none">
-                <a href="../index.html">主页</a>
-            </li>
-            <li onclick="next(this)">导航二</li>
-            <li style="display: none">
-                <a href="../index.html">主页</a>
-            </li>
-        </ul>
+        <div class="box">
+            <ul>
+                <li onclick='next(this)'>导航一</li>
+                <li style="display: none">
+                    <a href="../index.html">主页</a>
+                </li>
+                <li onclick="next(this)">导航二</li>
+                <li style="display: none">
+                    <a href="../index.html">主页</a>
+                </li>
+            </ul>
+        </div>
         
     </div>
     <script src="/js/base.js"></script>
