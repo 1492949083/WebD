@@ -144,25 +144,33 @@ setTimeout(function() {}, 500);
 money_btn.onclick = function () {
     if (click == false) {
         money.style.height = "300px";
-        money.style.width = "300px";
-        money.style.opacity = 1;
+        setTimeout(function() {
+            money.style.width = "300px";
+        }, 100);
+        setTimeout(() => {
+            money.style.opacity = 1;
+        }, 200);
         $(".wechatIcon").css("left", "173px");
         money.style.top = "70px";
         moneyText.style.top = "-320px";
         moneyText.style.opacity = "0";
-        
         setTimeout(function() {
             $(".wechatIcon").css("font-size", "36px");
         }, 500);
 
         click = true;
     } else {
-        money.style.width = "0px";
         money.style.height = "0px";
-        money.style.opacity = 0;
+        setTimeout(function() {
+            money.style.width = "0px";
+        }, 50);
+        setTimeout(() => {
+            money.style.opacity = 0;
+        }, 200);
+        
         $(".wechatIcon").css("left", "100px");
         $(".wechatIcon").css("font-size", "16px");
-        money.style.top = "470px";
+        money.style.top = "440px";
         moneyText.style.top = "0px";
         // 在这里暂停0.5秒钟
         setTimeout(function() {

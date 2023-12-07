@@ -203,8 +203,7 @@
 
 .money {
     position: fixed;
-    display:"block";
-    top: 470px;
+    top: 440px;
     width: 0px;
     height: 0px;
     opacity: 0;
