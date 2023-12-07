@@ -1,6 +1,7 @@
 /* 时间久了才发现这样写太傻了,很难调整颜色并且使每个主题观感一致,下次写这种还是用别的方法吧 */
 
 .theme0 {
+    --bg: url(../img/star.png);
     /* 暗色 */
     --bg-color: rgb(34, 34, 49);
     --bg-Dcolor: rgb(17, 17, 36);
@@ -21,7 +22,7 @@
 }
 .theme1 {
     /* 暗色 */
-
+    --bg: url(../img/orange.png);
     --bg-color: #1e2d39;
     --bg-Dcolor: #0f1a23;
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
@@ -41,6 +42,7 @@
 }
 .theme2 {
     /* 亮色 */
+    --bg: url(../img/pink.png);
     --bg-color: #C1DBDA;
     --bg-Dcolor: #5B9391;
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
@@ -52,14 +54,15 @@
     --gray-75: rgb(64, 64, 64);
     /* 半透明 */
     --Lgray-alpha: rgba(192, 192, 192, 0.5);
-    --gray-alpha: rgba(255, 255, 255, 0.1);
-    --Dgray-alpha: rgba(0, 0, 0, 0.16);
-    --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
+    --gray-alpha: rgba(255, 255, 255, 0.5);
+    --Dgray-alpha: rgba(138, 138, 138, 0.16);
+    --Dgray-alpha-35: rgba(204, 204, 204, 0.35);
     --black-alpha: rgba(0, 0, 0, 0.5);
     --black-alpha-35: rgba(0, 0, 0, 0.35);
 }
 .theme3 {
     /* 亮色 */
+    --bg: url(../img/off-white_.png);
     --bg-color: #f8f5d6;
     --bg-Dcolor: #D5D0A1;
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
@@ -67,13 +70,13 @@
     --text-color-accent: #80d1c8;
     /* 灰色 */
     --gray-25: rgb(192, 192, 192);
-    --gray-50: rgb(128, 128, 128);
+    --gray-50: rgb(214, 214, 214);
     --gray-75: rgb(64, 64, 64);
     /* 半透明 */
     --Lgray-alpha: rgba(192, 192, 192, 0.5);
-    --gray-alpha: rgba(255, 255, 255, 0.1);
-    --Dgray-alpha: rgba(0, 0, 0, 0.16);
-    --Dgray-alpha-35: rgba(49, 49, 49, 0.35);
+    --gray-alpha: rgba(255, 255, 255, 0.2);
+    --Dgray-alpha: rgba(255, 255, 255, 0.1);
+    --Dgray-alpha-35: rgba(248, 248, 248, 0.35);
     --black-alpha: rgba(0, 0, 0, 0.5);
     --black-alpha-35: rgba(0, 0, 0, 0.35);
 }

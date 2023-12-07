@@ -59,6 +59,9 @@ button:hover {
     height: 100vh;
     width: auto;
     background: var(--linear-gradient-bg-color);    
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
 }
 
 img {
