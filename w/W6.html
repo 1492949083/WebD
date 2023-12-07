@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .item{
+            width: 20vw;
+            height: 20vh;
+            margin: 2vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .father{
+            display: flex;
+            width: 10vw;
+            height: 10vh;
+            background-color: var(--text-color);
+            position: relative;
+        }
+        .son{
+            width: 5vw;
+            height: 5vh;
+            background-color: var(--text-color-accent);
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <title>作业6 2023/12/6</title>
+</head>
+<body>
+    <div class="Abox">
+        <div class="box">
+                <div class="item">
+                    <p>mouseenter</p>
+                    <div class="father" id="mouseenter">
+                        <div class="son"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p>mouseleave</p>
+                    <div class="father" id="mouseleave">
+                        <div class="son"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p>mouseover</p>
+                    <div class="father" id="mouseover">
+                        <div class="son"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p>mouseout</p>
+                    <div class="father" id="mouseout">
+                        <div class="son"></div>
+                    </div>
+                </div>
+
+        </div>
+            <p class="print"></p>
+    </div>
+    <script src="../js/base.js"></script>
+
+    <script>
+        let mouseenter = document.getElementById('mouseenter');
+        let mouseleave = document.getElementById('mouseleave');
+        let mouseover = document.getElementById('mouseover');
+        let mouseout = document.getElementById('mouseout');
+        let print = document.querySelector('.print');
+
+        mouseenter.addEventListener('mouseenter', () => {
+            print.innerHTML = 'mouseenter';
+        });
+        mouseenter.addEventListener('mouseleave', () => {
+            print.innerHTML = '';
+        });
+
+        mouseleave.addEventListener('mouseleave', () => {
+            print.innerHTML = 'mouseleave';
+            //一秒后清空
+            setTimeout(() => {
+                print.innerHTML = '';
+            }, 1000);
+        });
+
+        mouseover.addEventListener('mouseover', () => {
+            print.innerHTML = 'mouseover';
+            //一秒后清空
+            setTimeout(() => {
+                print.innerHTML = '';
+            }, 1000);
+        });
+
+        mouseout.addEventListener('mouseout', () => {
+            print.innerHTML = 'mouseout';
+            //一秒后清空
+            setTimeout(() => {
+                print.innerHTML = '';
+            }, 1000);
+        });
+
+        
+        
+    </script>
+</body>
+</html>
