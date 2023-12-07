@@ -105,11 +105,11 @@ hk.onmousedown = function (e) {
     //松开取消
     document.onmouseup = function () {
         Yclick = false;
-        if ( hk.offsetLeft < 277) {
-            moveHk(13);
+        if ( hk.offsetLeft < 267) {
+            moveHk(3);
             hkBgText.style.opacity = 0;
         } else {
-            if (hk.offsetLeft >= 277) {
+            if (hk.offsetLeft >= 267) {
                 end = true;
             }
         }
@@ -121,10 +121,10 @@ hk.onmousedown = function (e) {
 //限制移动范围
 function limitHk(x) {
     //限制不能超过hkBox的左宽度-13px
-    if (x < 13) {
-        x = 13;
-    } else if (x > 277) {
-        x = 277;
+    if (x < 1) {
+        x = 1;
+    } else if (x > 267) {
+        x = 267;
     }
     //移动滑块
     moveHk(x);
