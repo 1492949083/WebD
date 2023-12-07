@@ -4,7 +4,7 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    transition:  0.35s;
+    transition: 0.5s cubic-bezier(1,0,.6,1.23);
 }
 
 
@@ -287,7 +287,7 @@ img {
     top: 1vh;
     height: 4.5vh;
     width: 4.5vh;
-    background-color: rgb(34, 34, 49);
+    background-color: #1e2d39;
     border-radius: 1.5vh;
 }
 
@@ -296,7 +296,7 @@ img {
     top: 1vh;
     height: 4.5vh;
     width: 4.5vh;
-    background-color: rgb(255, 201, 120);
+    background-color: #ff9f53;
     border-radius: 1.5vh;
 }
 
@@ -310,7 +310,7 @@ img {
     top: 1vh;
     height: 4.5vh;
     width: 4.5vh;
-    background-color: #1e2d39;
+    background-color: rgb(34, 34, 49);
     border-radius: 1.5vh;
 }
 
@@ -319,7 +319,7 @@ img {
     top: 1vh;
     height: 4.5vh;
     width: 4.5vh;
-    background-color: #ff9f53;
+    background-color: rgb(255, 201, 120);
     border-radius: 1.5vh;
 }
 

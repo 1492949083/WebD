@@ -20,11 +20,12 @@
 
 .l-a-r {
     position: relative;
+    top: 5vh;
     padding: 3vh;
     background-color: var(--gray-alpha);
     backdrop-filter: blur(1vh);
     border-radius: 5vh;
-
+    box-shadow: 0 0 10vh var(--black-alpha);
 }
 
 .l-a-r .i {
@@ -207,5 +208,10 @@
     width: 0px;
     height: 0px;
     opacity: 0;
-    transition: width 0.5s, height 0.3s, opacity 0.5s;
+    box-shadow: 0 0 10vh var(--black-alpha);
+}
+
+.wechatIcon {
+    position: fixed;
+    left: 100px;
 }

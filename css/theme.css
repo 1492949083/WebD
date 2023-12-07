@@ -1,13 +1,12 @@
 /* 时间久了才发现这样写太傻了,很难调整颜色并且使每个主题观感一致,下次写这种还是用别的方法吧 */
-
 .theme0 {
-    --bg: url(../img/star.png);
     /* 暗色 */
-    --bg-color: rgb(34, 34, 49);
-    --bg-Dcolor: rgb(17, 17, 36);
+    --bg: url(../img/orange.png);
+    --bg-color: #1e2d39;
+    --bg-Dcolor: #0f1a23;
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
-    --text-color: rgb(253, 237, 202);
-    --text-color-accent: rgb(255, 201, 120);
+    --text-color: #fff;
+    --text-color-accent: #ff9f53;
     /* 灰色 */
     --gray-25: rgb(192, 192, 192);
     --gray-50: rgb(128, 128, 128);
@@ -21,13 +20,13 @@
     --black-alpha-35: rgba(0, 0, 0, 0.35);
 }
 .theme1 {
+    --bg: url(../img/star.png);
     /* 暗色 */
-    --bg: url(../img/orange.png);
-    --bg-color: #1e2d39;
-    --bg-Dcolor: #0f1a23;
+    --bg-color: rgb(34, 34, 49);
+    --bg-Dcolor: rgb(17, 17, 36);
     --linear-gradient-bg-color: linear-gradient(var(--bg-color), var(--bg-Dcolor));
-    --text-color: #fff;
-    --text-color-accent: #ff9f53;
+    --text-color: rgb(253, 237, 202);
+    --text-color-accent: rgb(255, 201, 120);
     /* 灰色 */
     --gray-25: rgb(192, 192, 192);
     --gray-50: rgb(128, 128, 128);
