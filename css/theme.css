@@ -73,7 +73,7 @@
     --gray-75: rgb(64, 64, 64);
     /* 半透明 */
     --Lgray-alpha: rgba(192, 192, 192, 0.5);
-    --gray-alpha: rgba(255, 255, 255, 0.2);
+    --gray-alpha: rgba(255, 255, 255, 0.38);
     --Dgray-alpha: rgba(255, 255, 255, 0.1);
     --Dgray-alpha-35: rgba(248, 248, 248, 0.35);
     --black-alpha: rgba(0, 0, 0, 0.5);

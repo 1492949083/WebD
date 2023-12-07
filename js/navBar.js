@@ -27,8 +27,19 @@ theme_btn.onclick = function () {
 
         changeCSS(".themeSelector", "left", "0vh");
         changeCSS(".themeSelector", "opacity", "1");
-
         click = true;
+
+        //鼠标没有悬停在控件上,就一秒后自动关闭
+        themeSelector.onmouseleave = function () {
+            setTimeout(function () {
+                changeCSS(".themeSelector", "left", "-15vh");
+                changeCSS(".themeSelector", "opacity", "0");
+                click = false;
+            }, 1000);
+        }
+
+        
+        
     } else {
 
         changeCSS(".themeSelector", "left", "-15vh");

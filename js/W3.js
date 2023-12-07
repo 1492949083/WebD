@@ -107,6 +107,12 @@ hk.onmousedown = function (e) {
         Yclick = false;
         if ( hk.offsetLeft < 267) {
             moveHk(3);
+            hk.style.transition = "left 0.5s cubic-bezier(1,0,.6,1.23)";
+            hkBg.style.transition = "opacity 0.45s cubic-bezier(1,-0.3,.85,.95),width 0.5s cubic-bezier(1,0,.6,1.23)";
+            setTimeout(function () {
+                hk.style.transition = "left 0s";
+                hkBg.style.transition = "width 0s";
+            }, 500);
             hkBgText.style.opacity = 0;
         } else {
             if (hk.offsetLeft >= 267) {
@@ -140,21 +146,30 @@ money_btn.onclick = function () {
         money.style.height = "300px";
         money.style.width = "300px";
         money.style.opacity = 1;
-        $(".wechatIcon").css("left", "180px");
+        $(".wechatIcon").css("left", "173px");
         money.style.top = "70px";
+        moneyText.style.top = "-320px";
         moneyText.style.opacity = "0";
+        
+        setTimeout(function() {
+            $(".wechatIcon").css("font-size", "36px");
+        }, 500);
+
         click = true;
     } else {
         money.style.width = "0px";
         money.style.height = "0px";
         money.style.opacity = 0;
         $(".wechatIcon").css("left", "100px");
+        $(".wechatIcon").css("font-size", "16px");
         money.style.top = "470px";
+        moneyText.style.top = "0px";
         // 在这里暂停0.5秒钟
-        setTimeout(function() {}, 500);
+        setTimeout(function() {
+            moneyText.style.opacity = "1";
+        }, 300);
 
 
-        moneyText.style.opacity = "1";
         click = false;
     }
 }

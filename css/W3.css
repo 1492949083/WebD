@@ -214,4 +214,13 @@
 .wechatIcon {
     position: fixed;
     left: 100px;
+    font-size: 16px;
+    transition:
+    left 0.5s cubic-bezier(.98,-0.53,.59,1.23),
+    font-size 0.5s cubic-bezier(.98,-0.53,.59,1.23);
+}
+
+#moneyText {
+    position: relative;
+    top: 0px;
 }

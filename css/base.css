@@ -4,7 +4,9 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    transition: 0.5s cubic-bezier(1,0,.6,1.23);
+    transition:
+    all 0.5s cubic-bezier(1,0,.6,1.23),
+    opacity 0.5s cubic-bezier(.44,0,0,1);
 }
 
 
