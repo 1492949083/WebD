@@ -1,24 +1,33 @@
-table {
-    border: 3px ridge var(--text-color-accent);
-    border-radius: 8px;
-    margin: 1vw;
-    padding: 1vw;
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
 }
 
-td {
+.box table {
+    border: 3px ridge var(--text-color-accent);
+    border-radius: 8px;
+    padding: 1vw;
+    backdrop-filter: blur(1vh);
+}
+
+.box td {
     text-align: center;
     border: 1px solid var(--text-color-accent);
     border-radius: 5px;
     padding: 1vw;
 }
 
-ul {
+.box ul {
     list-style-type: circle;
     padding: 1vw;
     margin: 1vw;
 }
 
-ol {
+.box ol {
     padding: 1vw;
     margin: 1vw;
 }
