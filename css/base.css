@@ -175,6 +175,8 @@ img {
     border-left: 1px solid var(--gray-alpha);
     border-right: 1px solid var(--gray-alpha);
     background-color: var(--Dgray-alpha-35);
+    /* 不知原因无法使用 */
+    backdrop-filter: blur(15px);
 }
 
 
