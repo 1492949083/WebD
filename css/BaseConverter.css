@@ -5,7 +5,7 @@
     align-items: center;
     /* 垂直排列 */
     flex-direction: column;
-    
+    height: 80%;
 }
 
 .selectBox {
@@ -51,4 +51,17 @@
 .selectBox p:hover {
     background-color: var(--black-alpha-35);
     cursor: pointer;
+}
+
+.now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+    padding: 1vh;
+    font-size: 3vh;
+    border-radius: 1vh;
+    border: 1px solid var(--gray-alpha);
+    backdrop-filter: blur(3vh);
+    background-color: var(--gray-alpha);
 }

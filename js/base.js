@@ -1,3 +1,5 @@
+
+
 const root = document.documentElement;
 // 获取Abox元素
 const Abox = document.querySelector('.Abox');
@@ -253,3 +255,12 @@ function thm2() {
 function thm3() {
     changeTheme('theme3');
 }
+
+// setTimeout(() => {
+//     //如果jquery和jqueryui没有加载，就重载页面
+//     if (typeof jQuery == 'undefined' || typeof jQuery.ui == 'undefined') {
+//         location.reload();
+//     }
+// }, 500);
+
+

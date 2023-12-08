@@ -15,17 +15,20 @@
         <div class="box">
             <h1>进制转换器</h1>
             <!-- BTN -->
-            <button onclick="showSelectBox()">选择进制</button>
+            <p class="now">
+                当前进制:<span id="base"></span>
+                <button onclick="showSelectBox()">选择进制</button>
+            </p>
             <h2><input id="tttInput" type="text" placeholder="输入被转数" oninput="Convert('#tttInput', '#tttOutput');">输出<input id="tttOutput" type="text" placeholder=""></h2>
             <!-- 选择面版 -->
             <div class="selectBox">
                 <i class="fa-solid fa-xmark cancel" onclick="hideSelectBox()"></i>
-                <p onclick="setBase('TenToTwo')">十转二 (就这样了,技术有限)</p>
+                <p onclick="setBase('十转二')">十转二 (就这样了,技术有限)</p>
             </div>
         </div>
 
-        <script src="/js/base.js"></script>
-        <script src="/js/BaseConverter.js"></script>
+        <script src="/js/base.js" ></script>
+        <script src="/js/BaseConverter.js" async></script>
 </body>
 
 </html>

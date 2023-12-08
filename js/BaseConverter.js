@@ -1,7 +1,14 @@
+
+window.onload = function(){
+    showBase();
+}
+
+
 $(function(){
     //面板内的p标签点击事件
-    $('.selectBox p').click(function(){
+    $('.selectBox p').on('click', function(){
         hideSelectBox();
+        showBase();
     });
 });
 
@@ -9,6 +16,18 @@ $(function(){
 function setBase(base){
     localStorage.setItem("base", base);
 }
+
+//显示当前选择的进制
+function showBase(){
+    var base = localStorage.getItem("base");
+    if(base == null){
+        $('#base').text("无");
+    }else{
+        $('#base').text(base);
+        
+    }
+}
+
 
 function Convert(input, output){
     var base = localStorage.getItem("base");
@@ -19,7 +38,7 @@ function Convert(input, output){
         return;
     }else{
         switch(base){
-            case 'TenToTwo':
+            case '十转二':
                 TenToTwo(input, output);
         }
     }
