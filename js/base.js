@@ -99,6 +99,13 @@ const navBarHTML = `
         </div>
 `;
 
+const bottomHTML = `
+    <div class="bottom">
+        <a target="_blank" href="http://www.freecdn.pw/?zzwz" title="免费云加速（FreeCDN），为您免费提供网站加速和网站防御（DDOS、CC攻击）" alt="免费云加速（FreeCDN），为您免费提供网站加速和网站防御（DDOS、CC攻击）">本站由免费云加速（FreeCDN）提供网站加速和攻击防御服务</a>
+    </div>
+    `;
+
+
 function loadScript(src) {
     var script = document.createElement('script');
     script.src = src;
@@ -236,6 +243,8 @@ window.onload = () => {
 
     // 将 link 元素添加到文档头部
     document.head.appendChild(link);
+    // 将HTML添加到Abox中
+    Abox.insertAdjacentHTML('beforeend', bottomHTML);
 
 
 };

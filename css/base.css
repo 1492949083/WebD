@@ -71,6 +71,9 @@ img {
     border-radius: 30px;
 }
 
+.bottom a{
+    color: var(--Lgray-alpha);
+}
 
 .navBar {
     position: sticky;
