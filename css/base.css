@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     transition:
-    all 0.5s cubic-bezier(1,0,.6,1.23),
+    all 0.5s ,
     opacity 0.5s cubic-bezier(.44,0,0,1);
 }
 
@@ -177,7 +177,7 @@ img {
     border-left: 1px solid var(--gray-alpha);
     border-right: 1px solid var(--gray-alpha);
     background-color: var(--Dgray-alpha-35);
-    /* 不知原因无法使用 */
+    /* 未知原因无法使用 */
     backdrop-filter: blur(15px);
 }
 

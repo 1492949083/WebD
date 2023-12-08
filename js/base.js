@@ -97,6 +97,12 @@ const navBarHTML = `
         </div>
 `;
 
+function loadScript(src) {
+    var script = document.createElement('script');
+    script.src = src;
+    document.head.appendChild(script);
+}
+
 function isLocal(local) {
     if (local == true) {
         const link = `
@@ -106,38 +112,40 @@ function isLocal(local) {
         <link rel="stylesheet" href="/css/theme.css">
         <link rel="stylesheet" href="/css/palestine.css">
         `
-        
-        
-        
-        document.write('<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>');
-        document.write('<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>');
-        document.write('<script src="/js/navBar.js" type="text/javascript" charset="utf-8"></script>');
-        document.write('<script src="/js/tools.js" type="text/javascript" charset="utf-8"></script>');
-        
+        // 加载 jQuery 和 jQuery UI
+        loadScript('https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js');
+        loadScript('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js');
+        // 加载本地脚本
+        setTimeout(() => {
+            loadScript('/js/navBar.js');
+        }, 100);
+        loadScript('/js/tools.js');
+          
         // 将HTML添加到Abox中
         Abox.insertAdjacentHTML('afterbegin', navBarHTML);
         meta.insertAdjacentHTML('afterend', link);    
     } else {
         const link = `
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
-    <link rel="stylesheet" href="//mc8.me/css/base.css">
-    <link rel="stylesheet" href="//mc8.me/css/theme.css">
-    `
-    
-    
-    
-    document.write('<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>');
-    document.write('<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>');
-    document.write('<script src="//mc8.me/js/navBar.js" type="text/javascript" charset="utf-8"></script>');
-    
-    // 将HTML添加到Abox中
-    Abox.insertAdjacentHTML('afterbegin', navBarHTML);
-    meta.insertAdjacentHTML('afterend', link);
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
+        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="/css/theme.css">
+        <link rel="stylesheet" href="/css/palestine.css">
+        `
+        // 加载 jQuery 和 jQuery UI
+        loadScript('https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js');
+        loadScript('https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js');
+        // 加载本地脚本
+        setTimeout(() => {
+            loadScript('/js/navBar.js');
+        }, 100);
+        loadScript('/js/tools.js');
+          
+        // 将HTML添加到Abox中
+        Abox.insertAdjacentHTML('afterbegin', navBarHTML);
+        meta.insertAdjacentHTML('afterend', link);  
     }
 }    
-    
-
 isLocal(true)
 
 // 改变 颜色 变量

@@ -126,7 +126,6 @@ hk.onmousedown = function (e) {
 
 //限制移动范围
 function limitHk(x) {
-    //限制不能超过hkBox的左宽度-13px
     if (x < 1) {
         x = 1;
     } else if (x > 267) {
@@ -139,8 +138,6 @@ function limitHk(x) {
 
 var click = false;
 //点击money_btn出现money
-// 在这里暂停0.5秒钟
-setTimeout(function() {}, 500);
 money_btn.onclick = function () {
     if (click == false) {
         money.style.height = "300px";

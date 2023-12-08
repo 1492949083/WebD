@@ -20,7 +20,6 @@ const homeworkFiles = [
   
   // 创建作业索引的父元素
   const indexBox = document.querySelector(".indexBox");
-  
   // 遍历作业文件列表，创建链接并添加到索引中
   homeworkFiles.forEach((homework) => {
     const linkElement = document.createElement("h3");
@@ -33,13 +32,11 @@ const homeworkFiles = [
     linkElement.appendChild(link);
     noteText = document.createTextNode(`${homework.note}`)
     linkElement.appendChild(noteText)
-  
     // 如果是最新作业，添加标记
     if (homework === newestHomework) {
       const newestText = document.createTextNode(" (最新)");
       linkElement.appendChild(newestText);
     }
-  
     indexBox.appendChild(linkElement);
   });
   
