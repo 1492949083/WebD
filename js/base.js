@@ -193,7 +193,6 @@ isLocal(true)
 
 function changeTheme(theme) {
     document.documentElement.className = theme;
-
     //cookie
     document.cookie = `theme=${theme};path=/;expires=Tue, 19 Jan 2038 03:14:07 GMT`;
 }
@@ -237,7 +236,7 @@ window.onload = () => {
 // 创建一个 link 元素
     const link = document.createElement('link');
     link.rel = 'icon'; // 指定关系为 icon，表示网页图标
-    link.href = '/img/favicon.ico'; // 替换为你的图标文件的路径
+    link.href = '/img/favicon.ico';
 
     // 将 link 元素添加到文档头部
     document.head.appendChild(link);
