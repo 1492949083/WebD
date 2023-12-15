@@ -58,11 +58,13 @@ button:hover {
 }
 
 .Abox {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: auto;
     background: var(--linear-gradient-bg-color);    
     background-image: var(--bg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
 }
 
