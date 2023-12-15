@@ -120,8 +120,10 @@ function isLocal(local) {
         <link rel="stylesheet" href="/css/palestine.css">
         `
         // 加载 jQuery 和 jQuery UI
-        loadScript('https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js');
-        loadScript('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js');
+        // loadScript('https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js');
+        // loadScript('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js');
+        loadScript('/js/jquery.min.js');
+        loadScript('/js/jquery-ui.min.js');
         // 加载本地脚本
         setTimeout(() => {
             loadScript('/js/navBar.js');

@@ -7,6 +7,7 @@ const homeworkFiles = [
     { name: "作业5", date: "2023/11/8", url: "./w/W5.html", note: "(导航条)" },
     { name: "作业6", date: "2023/12/6", url: "./w/W6.html", note: "(鼠标事件)" },
     { name: "作业7", date: "2023/12/13", url: "./w/W7.html", note: "(音乐,视频)" },
+    { name: "新闻网站", date: "2023/12/15", url: "./w/new.html", note: "" },
   ];
   
   // 找到最新的作业
