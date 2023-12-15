@@ -55,9 +55,7 @@ const navBarHTML = `
                 <div class="support-palestine__label"><a href="https://the-palestinian-side.vercel.app/resources">Support Palestine</a></div>
             </div>
             <div class="icon">
-                <a href="https://t.me/ccc007ccc" target="_blank">
-                    <i id="tg" class="fab fa-telegram"></i>
-                </a>
+                
                 <a href="https://gitee.com/ccc007ccc/WebD" target="_blank">
                     <i id="gitee" class="iconfont icon-gitee"></i>
                 </a>
