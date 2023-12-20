@@ -1,0 +1,98 @@
+.pszsbcp {
+  text-align: center;
+  padding-top: 30px;
+  color: var(--thm-nav);
+}
+
+
+.theme {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 20px;
+  /* 设置行列间距 */
+  margin: 20px;
+}
+.theme .button {
+  /* 相对定位 */
+  position: relative;
+  /* 设置卡片长宽 */
+  height: 85px;
+  width: 100px;
+  /* 设置行列间距 */
+  margin: 5px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px
+  
+}
+.theme .button p {
+  position: relative;
+  top: 15px;
+}
+
+/*颜色方块*/
+.colorBlock1 {
+  display: flex;
+  justify-content: center;
+}
+.colorBlock1 .block1 {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #1e2d39;
+  border-radius: 10px;
+}
+.colorBlock1 .block2 {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #ff9f53;
+  border-radius: 10px;
+}
+
+
+.colorBlock2 {
+  display: flex;
+  justify-content: center;
+}
+.colorBlock2 .block1 {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #C1DBDA;
+  border-radius: 10px;
+}
+.colorBlock2 .block2 {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #F2987D;
+  border-radius: 10px;
+}
+
+
+.colorBlock3 {
+  display: flex;
+  justify-content: center;
+}
+.colorBlock3 .block1 {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #f8f5d6;
+  border-radius: 10px;
+}
+.colorBlock3 .block2 {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #80d1c8;
+  border-radius: 10px;
+}

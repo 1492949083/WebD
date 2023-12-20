@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST_PRO</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/test_pro.css">
+</head>
+<body>
+    <!-- 设置容器 -->
+    <div class="container">
+        <!-- 设置卡片 -->
+        <div class="card">
+            <div class="content">
+                <h2>01 </h2>
+                <h3>第一个卡片</h3>
+                <p>ABCDEFG玻璃卡片悬停效果玻璃卡片悬停效果玻璃卡片悬停效果玻璃卡片悬停效果</p>
+                <a href="#">阅读更多</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>第二个卡片</h3>
+                <p>玻璃卡片悬停效果玻璃卡片悬停效果玻璃卡片悬停效果玻璃卡片悬停效果</p>
+                <a href="#">阅读更多</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>第三个卡片</h3>
+                <p>玻璃卡片悬停效果玻璃卡片悬停效果玻璃卡片悬停效果玻璃卡片悬停效果</p>
+                <a href="#">阅读更多</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导入js -->
+    <script src="js/vanilla-tilt.js"></script>
+    <!-- vanilla-tilt.js是一个平滑的3d倾斜库 -->
+    <script>
+
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max:15,speed:600,glare:true,"max-glare":0.5
+            // 最大倾斜度数,倾斜速度,是否开启炫光效果,最大炫光不透明度
+        })
+    </script>
+</body>
+</html>

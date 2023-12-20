@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST_PRO_MAX</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/test_pro_max.css">
+</head>
+<body>
+
+
+    <!-- 容器 -->
+    <div class="container">
+        <!-- 卡片 -->
+        <div class="card">
+            <!-- 图片 -->
+            <div class="photo">
+                <img src="images/test/dlam.jpg">
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <h1>哆啦a梦</h1>
+                <h2>ドラえもん</h2>
+                <p>哆啦a梦,旧译为机器猫,日本漫画《哆啦A梦》及其衍生作品中的猫型机器人。</p>
+                <!-- 显示更多 -->
+                <div class="link">
+                    <a href="https://baike.baidu.com/item/%E5%93%86%E5%95%A6A%E6%A2%A6/12004862?fromModule=lemma_inlink">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <!-- 卡片 -->
+        <div class="card">
+            <!-- 图片 -->
+            <div class="photo">
+                <img src="images/test/dx.jpg">
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <h1>野比大雄</h1>
+                <h2>のび太</h2>
+                <p>野比大雄，简称大雄，日本漫画《哆啦A梦》及其衍生作品中的男主角。</p>
+                <!-- 显示更多 -->
+                <div class="link">
+                    <a href="https://baike.baidu.com/item/%E9%87%8E%E6%AF%94%E5%A4%A7%E9%9B%84/1681726?lemmaFrom=lemma_starMap">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <!-- 卡片 -->
+        <div class="card">
+            <!-- 图片 -->
+            <div class="photo">
+                <img src="images/test/dlm.jpg">
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <h1>哆啦美</h1>
+                <h2>ドラミ</h2>
+                <p>哆啦美是哆啦A梦的妹妹,在哆啦A梦回22世纪检查时，哆啦美便暂时代替哥哥帮助大雄。</p>
+                <!-- 显示更多 -->
+                <div class="link">
+                    <a href="https://baike.baidu.com/item/%E5%93%86%E5%95%A6%E7%BE%8E/1726827?lemmaFrom=lemma_relation_starMap">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导入js -->
+    <script src="js/vanilla-tilt.js"></script>
+    <!-- vanilla-tilt.js是一个平滑的3d倾斜库 -->
+    <script>
+
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max:15,speed:600,glare:true,"max-glare":0.5
+            // 最大倾斜度数,倾斜速度,是否开启炫光效果,最大炫光不透明度
+        })
+    </script>
+
+</body>
+</html>

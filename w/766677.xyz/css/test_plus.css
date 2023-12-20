@@ -1,0 +1,74 @@
+* {
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 右边的圆 */
+body::before {
+    content: "";
+    /* 绝对定位 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* 渐变背景 */
+    background: linear-gradient(#FCA846,#AC54BB);
+    /* 将元素裁切成一个圆30%代表圆的直径, x,y */
+    clip-path: circle(0% at 110% 80%);
+    transition: clip-path 1s;
+}
+
+body:hover:before {
+    clip-path: circle(40% at 90% 70%);
+}
+
+/* 左边的圆 */
+body::after {
+    content: "";
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 渐变背景 */
+    background: linear-gradient(#FFBC6F,#E9FA6D);
+    /* 将元素裁切成一个圆30%代表圆的直径, x,y */
+    clip-path: circle(0% at -5% 30%);
+    transition: clip-path 1s;
+}
+body:hover::after {
+    clip-path: circle(25% at 10% 30%);
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 7px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(35px);
+    z-index: 1;
+    transition: width 0.5s;
+}
+
+.box:hover {
+    width: 90px;
+}
+
+.box.icon.icon-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.icon.icon-img {
+    box-shadow: rgba(0, 0, 0, 1);
+}

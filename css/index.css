@@ -12,7 +12,8 @@
     align-items: center;
     grid-row-gap: 2vh;
     width: 50vw;
-    height: 80vh;
+    height: auto;
+    padding: 0vh 4vw 4vh 4vw;
     border-radius: 4vh;
     border: 1px solid var(--gray-alpha);
     background-color: var(--gray-alpha);

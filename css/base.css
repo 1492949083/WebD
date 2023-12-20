@@ -18,7 +18,7 @@ a {
 body {
     background-color: var(--bg-Dcolor);
 
-    transition: backeround-color 0.5s;
+    transition: background-color 0.5s;
 }
 
 input {
@@ -159,9 +159,11 @@ img {
     flex-direction: column;
 }
 
+
 .leftBar ul a {
     margin-top: 1vh;
     margin-bottom: 1vh;
+    
     font-size: 2.2vh;
 }
 
@@ -176,6 +178,7 @@ img {
 }
 .leftBar .p_ul1 li {
     position: relative;
+    min-width: 100px;
     margin-top: 1vh;
     margin-bottom: 1vh;
     font-size: 2.2vh;

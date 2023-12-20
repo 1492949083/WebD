@@ -29,7 +29,7 @@ const navBarHTML = `
                                 <a href="//mc8.me">这学期作业</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">github项目</a>
+                                <a href="javascript:void(0);">github储存库</a>
                                 <ul>
                                     <li><a href="https://github.com/1492949083/script_c-">c++自动点击</a></li>
                                     <li><a href="https://github.com/1492949083/AutoClick">Python自动点击</a></li>
@@ -38,6 +38,12 @@ const navBarHTML = `
                                 </ul>
                             </li>
                             <li><a href="/w/BaseConverter.html">进制转换器(在做)</a></li>
+                            <li>
+                                <a href="javascript:void(0);">已归档储存库</a>
+                                <ul>
+                                    <li><a href="../w/766677.xyz/index_old.html">曾经写的网站</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>

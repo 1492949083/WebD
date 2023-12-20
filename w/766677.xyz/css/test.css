@@ -1,0 +1,237 @@
+/* css */
+/* 选择器 */
+* {
+    /* 初始化行间距 */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    /* 100%的窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+    /* 背景默认颜色 */
+    background-color: #1e2d39;
+    /* 文字默认颜色 */
+    color: #ffffff;
+
+    /* 设置动画时长 */
+    animation:color 2s;
+    /* forwards	在动画结束后，动画将应用该属性值。 */
+    animation-fill-mode:forwards;
+}
+
+/* 超链接默认样式 */
+a {
+    color: #ff9f53;
+    text-decoration: none;
+}
+
+@keyframes color
+{
+    100% {background-color: #29506E;}
+}
+
+/* 设置卡片 */
+.card {
+    /* 相对定位 */
+    position: relative;
+    /* 设置卡片长宽 */
+    width: 0px;
+    height: 0px;
+    /* 设置行列间距 */
+    margin: 20px;
+    /* 卡片底色 */
+    background-color: #6E8CA3;
+    /* 设置圆角 */
+    border-radius: 20px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 弹性布局 */
+    display: flex;
+    /* 元素纵向排列 */
+    flex-direction: column;
+    /* 居中 */
+    align-items: center;
+    /* 阴影 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* 弹性收缩 */
+    flex-shrink: 0;
+    /* 设置动画名与时长 */
+    animation:card 1s;
+    /* forwards	在动画结束后，动画将应用该属性值。 */
+    animation-fill-mode:forwards;
+}
+
+@keyframes card
+{
+    100% {
+        /* 设置卡片长宽 */
+        width: 300px;
+        height: 450px;
+    }
+}
+
+
+
+/* 设置图片 */
+.card .photo img {
+    width: 100%;
+    height: 100%;
+    /* 保持原尺寸,裁切长边 */
+    object-fit: cover;
+}
+
+/* 默认大图 */
+.card .photo {
+    /* 绝对定位 */
+    position: absolute;
+    /* 与卡片顶部的距离 */
+    top: 0;
+    /* 保持比例 */
+    width: 100%;
+    height: 100%;
+    /* 设置圆角 */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.5s;
+}
+
+/* 鼠标移入变小图 */
+.card:hover .photo {
+    /* 距离顶端距离 */
+    top: 30px;
+    /* 设置图片长宽 */
+    width: 230px;
+    height: 230px;
+    /* 设置圆角 */
+    border-radius: 20%;
+    /* 阴影 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* 给图片加黑色到透明的渐变 */
+.card .photo::before {
+
+    content: "";
+    /* 绝对定位 */
+    position: absolute;
+    /* 保持比例 */
+    width: 100%;
+    height: 100%;
+    /* 设置渐变 */
+    background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.5));
+}
+
+
+
+.card h1 {
+    /* 绝对定位 */
+    position: absolute;
+    /* 距离顶端距离 */
+    top: 370px;
+    /* 动画速度 */
+    transition: 0.68s;
+    /* 字体大小 */
+    font-size: 200%;
+}
+
+.card:hover h1 {
+    /* 距离顶端距离 */
+    top: 210px;
+    /* 字体大小 */
+    font-size: 120%;
+}
+
+
+
+.card h2 {
+    /* 绝对定位 */
+    position: absolute;
+    /* 距离顶端距离 */
+    top: 410px;
+    /* 动画速度 */
+    transition: 0.7s;
+    /* 字体大小 */
+    font-size: 150%;
+}
+
+.card:hover h2 {
+    /* 距离顶端距离 */
+    top: 235px;
+    /* 字体大小 */
+    font-size: 90%;
+}
+
+
+
+/* 设置主体 */
+.card p {
+    /* 设置颜色 */
+    color: rgba(255,255,255,0);
+    /* 设置居中 */
+    text-align: center;
+    /* 设置上顶端距离(联动) */
+    margin-top: 450px;
+    /* 设置底部距离(联动) */
+    margin-bottom: 15px;
+    /* 设置右边距离(联动) */
+    margin-right: 20px;
+    /* 设置左边距离(联动) */
+    margin-left: 20px;
+    /* 设置宽度 */
+    width: 80%;
+    /* 设置与边框距离*/
+    padding-top: 20px;
+    /* 设置分隔线(边框) */
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    transition: color 2s, margin-top 0.7s;
+}
+
+.card:hover p {
+    /* 设置颜色 */
+    color: rgba(255,255,255,1);
+    /* 设置上顶端距离(联动) */
+    margin-top: 290px;
+}
+
+
+
+
+/* 设置超链接 */
+.card a {
+    /* 设置字体大小 */
+    font-size: 14px;
+    /* 设置字体颜色 */
+    color: #113551;
+    /* 设置边框 */
+    border: 6px solid rgba(255, 255, 255, 0);
+    /* 设置与边框的距离(宽,长) */
+    padding: 0px 0px;
+    /* 设置圆角 */
+    border-radius: 0px;
+    /* 动画速度 */
+    transition: border 1s, border-radius 1s, padding 1.2s, color 1.1s;
+}
+
+.card:hover a {
+    /* 设置颜色 */
+    color: #A3B9C9;
+    /* 设置与边框的距离(宽,长) */
+    padding: 8px 32px;
+    /* 设置边框 */
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    /* 设置圆角 */
+    border-radius: 15px;
+}

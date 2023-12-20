@@ -1,0 +1,287 @@
+/* 引入网络字体fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+* {
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 设置字体 */
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+body {
+    /* 100%的窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #1e2d39;
+}
+
+/* 右边的圆 */
+body::before {
+    content: "";
+    /* 绝对定位 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* 渐变背景 */
+    background: linear-gradient(#FCA846,#AC54BB);
+    /* 将元素裁切成一个圆30%代表圆的直径, x,y */
+    clip-path: circle(0% at 110% 80%);
+    transition: clip-path 1s;
+}
+
+body:hover:before {
+    clip-path: circle(40% at 90% 70%);
+}
+
+/* 左边的圆 */
+body::after {
+    content: "";
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 渐变背景 */
+    background: linear-gradient(#FFBC6F,#E9FA6D);
+    /* 将元素裁切成一个圆30%代表圆的直径, x,y */
+    clip-path: circle(0% at -5% 30%);
+    transition: clip-path 1s;
+}
+body:hover::after {
+    clip-path: circle(25% at 10% 30%);
+}
+
+/* 设置容器 */
+.container {
+    /* 相对定位 */
+    position: relative;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+/* 设置卡片 */
+.container .card {
+    /* 相对定位 */
+    position: relative;
+    /* 设置高度 */
+    top: 150px;
+    /* 设置卡片长宽 */
+    height: 340px;
+    width: 235px;
+    /* 设置圆角 */
+    border-radius: 35px;
+    /* 设置行列间距 */
+    margin: 20px;
+    /* 设置颜色 */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* 设置阴影 */
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* 设置卡片边缘高光 */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+    /* 高斯模糊效果 */
+    backdrop-filter: blur(30px);
+    /* 设置透明度 */
+    opacity: 0;
+
+    /* 设置动画 */
+    animation: an 1.2s;
+    /* forwards	在动画结束后，动画将应用该属性值。 */
+    animation-fill-mode:forwards;
+    /* 鼠标触碰动画 */
+    transition: height 1s, width 1s,border-radius 1s, box-shadow 1s;
+}
+
+@keyframes an {
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+.container .card:hover {
+    /* 设置卡片长宽 */
+    height: 400px;
+    width: 280px;
+    /* 设置卡片圆角 */
+    border-radius: 46.47px;
+    /* 设置阴影 */
+    box-shadow: 70px 70px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* 设置图片 */
+.container .card .photo img {
+    width: 100%;
+    height: 100%;
+    /* 保持原尺寸,裁切长边 */
+    object-fit: cover;
+}
+
+/* 默认大图 */
+.card .photo {
+    /* 绝对定位 */
+    position: absolute;
+    /* 与卡片顶部的距离 */
+    top: 0;
+    /* 保持比例 */
+    width: 100%;
+    height: 100%;
+    /* 设置圆角 */
+    border-radius: 25px;
+    box-shadow: 100px 100px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.5s;
+    z-index: 0;
+}
+
+/* 给图片加黑色到透明的渐变 */
+.card .photo::before {
+    /* 不知含义,但是不能没有 */
+    content: "";
+    /* 绝对定位 */
+    position: absolute;
+    /* 保持比例 */
+    width: 100%;
+    height: 100%;
+    /* 设置渐变 */
+    /* background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4),rgba(0, 0, 0, 0)); */
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.4));
+}
+
+
+
+/* 鼠标移入变小图 */
+.card:hover .photo {
+    /* 距离顶端距离 */
+    top: 30px;
+    /* 设置图片长宽 */
+    width: 230px;
+    height: 230px;
+    /* 设置圆角 */
+    border-radius: 20%;
+    /* 阴影 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.content {
+    
+    /* 给文字填充边距 */
+    padding: 2px;
+    
+    /* 文字居中 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* 设置标题 */
+.card .content h1 {
+    /* 绝对定位 */
+    position: absolute;
+    /* 距离顶端距离 */
+    top: 340px;
+    /* 动画速度 */
+    transition: 0.68s;
+    /* 字体大小 */
+    font-size: 200%;
+}
+.card .content:hover h1 {
+    /* 距离顶端距离 */
+    top: 210px;
+    /* 字体大小 */
+    font-size: 120%;
+}
+
+
+.card .content h2 {
+    /* 绝对定位 */
+    position: absolute;
+    /* 距离顶端距离 */
+    top: 410px;
+    /* 动画速度 */
+    transition: 0.7s;
+    /* 字体大小 */
+    font-size: 150%;
+}
+.card .content:hover h2 {
+    /* 距离顶端距离 */
+    top: 235px;
+    /* 字体大小 */
+    font-size: 90%;
+}
+
+
+.content p {
+     /* 设置居中 */
+     text-align: center;
+     /* 设置上顶端距离(联动) */
+     margin-top: 450px;
+     /* 设置底部距离(联动) */
+     margin-bottom: 10px;
+     /* 设置右边距离(联动) */
+     margin-right: 20px;
+     /* 设置左边距离(联动) */
+     margin-left: 20px;
+     /* 设置宽度 */
+     width: 80%;
+     /* 设置与边框距离*/
+     padding-top: 20px;
+     /* 设置分隔线(边框) */
+     border-top: 1px solid rgba(255, 255, 255, 0.3);
+     transition: color 2s, margin-top 0.7s;
+}
+.content:hover p {
+    /* 设置颜色 */
+    color: rgba(255,255,255,1);
+    /* 设置上顶端距离(联动) */
+    margin-top: 275px;
+}
+
+.link {
+    /* 元素纵向排列 */
+    writing-mode: vertical-lr;
+    /* 设置绝对定位 */
+    position: absolute;
+    font-size: 20px;
+    top: 100px;
+    left: 240px;
+    /* 元素纵向排列 */
+    flex-direction: column;
+    /* 设置与边框的距离(宽,长) */
+    padding: 4px 8px;
+    /* 设置边框 */
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* 设置圆角 */
+    border-radius: 15px;
+    /* 高斯模糊效果 */
+    backdrop-filter: blur(50px);
+}
+.link a {
+    /* 设置颜色 */
+    color: rgba(255, 255, 255, 0.7);
+}
