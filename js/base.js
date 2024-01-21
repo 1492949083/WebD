@@ -20,7 +20,7 @@ const navBarHTML = `
                             <li class="p_li1">
                                 <a class="p_li1_a" href="javascript:void(0);">上学期作业</a>
                                 <ul class="p_ul2">
-                                    <li><a href="//sweb.mc8.me">Simple-Web</a></li>
+                                    <li><a href="//2022web.766677.xyz">Simple-Web</a></li>
                                     <li><a href="//github.com/1492949083/TurnBasedGenshin">回合制原神</a></li>
                                     <li><a href="https://github.com/1492949083/PingPongWinRateCalculator">乒乓球胜率计算器</a></li>
                                 </ul>
@@ -58,7 +58,7 @@ const navBarHTML = `
                         <div class="triangle"></div>
                     </div>
                 </div>
-                <div class="support-palestine__label"><a href="https://the-palestinian-side.vercel.app/resources">Support Palestine</a></div>
+                <div class="support-palestine__label"><a href="https://the-palestinian-side.vercel.app/resources">Free Palestine</a></div>
             </div>
             <div class="icon">
                 
