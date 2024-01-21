@@ -26,7 +26,7 @@ const navBarHTML = `
                                 </ul>
                             </li>
                             <li>
-                                <a href="//mc8.me">这学期作业</a>
+                                <a href="/index.html">这学期作业</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);">github储存库</a>
