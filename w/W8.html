@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/W2.css">
+
+    <title>作业8 2024/3/6</title>
+</head>
+<body>
+    <div class="Abox">
+        <p>音频</p>
+        <audio src="../img/audio.mp3" controls="controls"></audio>
+        <p>视频</p>
+        <video src="../img/video.mp4" controls="controls"></video>
+        
+        <div class="box">
+            <h2><mark style="color: black;">学习计划</mark></h2>
+
+            <table>
+                <tr>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                    <th>星期六</th>
+                    <th><mark style="color: black;">星期日</mark></th>
+                </tr>
+                <tr>
+                    <td>上课</td>
+                    <td>上课</td>
+                    <td>上课</td>
+                    <td>上课</td>
+                    <td>上课</td>
+                    <td>上课</td>
+                    <td>上课</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li><mark style="color: black;">学习</mark></li>
+                            <li>休息</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>学习</li>
+                            <li><mark style="color: black;">休息</mark></li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>学习</li>
+                            <li>休息</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>学习</li>
+                            <li>休息</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>学习</li>
+                            <li>休息</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>学习</li>
+                            <li>休息</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>学习</li>
+                            <li>休息</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <time datetime="2024-03-06">2024/3/6</time>
+        </div>
+
+        <!-- 计数器 -->
+        <div class="box">
+            <h2>计数器</h2>
+            <button id="btn">点击</button>
+            <p id="num">0</p>
+        </div>
+    </div>
+
+
+    <script src="../js/base.js"></script>
+    <script>
+        document.designMode = "on";
+
+        const btn = document.getElementById('btn');
+        const p = document.getElementById('num');
+        let count = 0;
+        btn.onclick = function() {
+            count++;
+            p.innerText = count;
+        }
+
+    </script>
+</body>
+</html>

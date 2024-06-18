@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>3.13</title>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <div class="Abox">
+    <div>
+      <form action="" method="get">
+        <input type="submit"><br>
+        <input type="color" name="color" value="#D22D2D"><br>
+        <input type="time" name="time"><br>
+        <input type="datetime-local" name="date"><br>
+        <input type="date" name="date" max="2024-03-31" min="2024-03-01"><br>
+        <input type="month" name="month" max="2024-12" min="2024-01"><br>
+        <input type="week" name="week"><br>
+        <input type="email" name="email" multiple="multiple"><br>
+        <input type="number" name="number" step="10"><br>
+        <input type="range" name="range" list="marks"><br>
+        <input type="search" name="search"><input type="submit"><br>
+        <input type="url" name="url">
+      </form>
+      <datalist id="marks">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+      </datalist>
+      <form action="" method="get" oninput="x.value=parseInt(a.value)">0
+        <input type="range" id="a" value="50">100<br>
+        <output name="x" for="a">50</output>
+      </form>
+    </div>
+  </div>
+
+    <script src="/js/base.js"></script>
+  </body>
+
+</html>

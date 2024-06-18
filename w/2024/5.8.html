@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动物卡片</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <style>
+
+
+        .card {
+            position: absolute;
+            width: 200px;
+            height: 318px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: lightblue;
+            transform-origin: left bottom;
+            /* 使旋转质心在卡片的中心 */
+        }
+
+        .card1 {
+            transform: rotate(-60deg);
+            /* 增加旋转角度 */
+            top: 160px;
+            left: calc(50% - 100px);
+            /* 调整水平位置 */
+        }
+
+        .card2 {
+            transform: rotate(-36deg);
+            /* 增加旋转角度 */
+            top: 140px;
+            left: calc(50% - 100px);
+        }
+
+        .card3 {
+            transform: rotate(-12deg);
+            /* 增加旋转角度 */
+            top: 120px;
+            left: calc(50% - 100px);
+        }
+
+        .card4 {
+            transform: rotate(12deg);
+            /* 增加旋转角度 */
+            top: 100px;
+            left: calc(50% - 100px);
+        }
+
+        .card5 {
+            transform: rotate(36deg);
+            /* 增加旋转角度 */
+            top: 80px;
+            left: calc(50% - 100px);
+        }
+
+        .card1:hover {
+            z-index: 1;
+            left: calc(50% - 400px);
+            transform: rotate(0deg) scale(1.2);
+        }
+
+        .card2:hover {
+            z-index: 1;
+            left: calc(50% - 300px);
+            transform: rotate(0deg) scale(1.2);
+        }
+
+        .card3:hover {
+            z-index: 1;
+            left: calc(50% - 200px);
+            transform: rotate(0deg) scale(1.2);
+        }
+
+        .card4:hover {
+            z-index: 1;
+            left: calc(50% - 100px);
+            transform: rotate(0deg) scale(1.2);
+        }
+
+        .card5:hover {
+            z-index: 1;
+            left: calc(50% + 0px);
+            transform: rotate(0deg) scale(1.2);
+        }
+
+        .card img {
+            margin: 0 5%;
+            width: 90%;
+            border-radius: 15px 15px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Abox">
+        <div class="card card1">
+            <img src="https://i0.hdslb.com/bfs/archive/a6b4022383972e204127b54e58a7fffec852f993.jpg" alt="狗">
+            <p>
+                狗是一种常见的宠物动物，是人类最忠实的朋友之一。
+            </p>
+        </div>
+        <div class="card card2">
+            <img src="https://b0.bdstatic.com/23f4f5eacde476ebaaef378b7e28a191.jpeg" alt="猫">
+            <p>
+                猫是一种常见的宠物动物，是人类最亲密的伙伴之一。
+            </p>
+        </div>
+        <div class="card card3">
+            <img src="https://img.touxiangkong.com/uploads/allimg/2022021820/5chh3x542d1.jpg" alt="猪">
+            <p>
+                猪是一种常见的农场动物，是人类最重要的食物来源之一。
+            </p>
+        </div>
+        <div class="card card4">
+            <img src="https://img1.baidu.com/it/u=3918308392,253978394&fm=253&fmt=auto&app=138&f=JPEG" alt="牛">
+            <p>
+                牛是一种常见的农场动物，是人类最重要的劳动力之一。
+            </p>
+        </div>
+        <div class="card card5">
+            <img src="https://img2.baidu.com/it/u=2558311652,1739825953&fm=253&fmt=auto&app=138&f=GIF" alt="马">
+            <p>
+                马是一种常见的农场动物，是人类最重要的交通工具之一。
+            </p>
+        </div>
+    </div>
+    <script src="/js/base.js"></script>
+</body>
+
+</html>

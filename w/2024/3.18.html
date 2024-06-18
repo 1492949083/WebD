@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3.18</title>
+  <style>
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input,
+    textarea,
+    select {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Abox">
+    <main>
+      <form
+        style="display: flex; backdrop-filter: blur(15px); display: flex; flex-direction: column; align-items: center; z-index: 100; background-color: var(--Lgray-alpha);"
+        action="" method="post">
+        <div style="display: flex; flex-direction: row;">
+          <label for="username">用户名:</label>
+          <input type="text" id="username" name="username" placeholder="请输入用户名"><br>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <label for="password">密码:</label>
+          <input type="password" id="password" name="password" placeholder="请输入密码"><br>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <label for="phone">手机:</label>
+          <input type="tel" id="phone" name="phone" placeholder="请输入手机号"><br>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <label for="email">邮箱:</label>
+          <input type="email" id="email" name="email" placeholder="请输入邮箱"><br>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <label for="blog">博客网址:</label>
+          <input type="url" id="blog" name="blog" placeholder="请输入博客网址"><br>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <label for="age">年龄:</label>
+          <input id="age" name="age" min="0" max="100" placeholder="请输入年龄"><br>
+        </div>
+
+        <input type="file" id="avatar" name="avatar" accept="image/*" onchange="previewAvatar(event)">
+        <img id="avatarPreview" src="" alt="avatar preview" style="display: none; width: 200px;" />
+
+        <div style="display: flex; flex-direction: row;">
+          <label for="gender">性别:</label><br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">男</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">女</label><br>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+          <label for="interests">兴趣:</label><br>
+          <input type="checkbox" id="interest1" name="interests">
+          <label for="interest1">篮球</label><br>
+          <input type="checkbox" id="interest2" name="interests">
+          <label for="interest2">足球</label><br>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+          <label for="dob">出生日期:</label>
+          <input type="date" id="dob" name="dob"><br>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+          <label for="region">选择地区:</label>
+          <select id="region" name="region">
+            <option value="beijing">北京</option>
+            <option value="shanghai">上海</option>
+            <option value="guangzhou">广州</option>
+          </select><br>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <label for="studyYears">学习年限:</label>
+          <input type="range" id="studyYears" name="studyYears" min="1" max="5" list="tickmarks">
+          <datalist id="tickmarks">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+          </datalist>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <label for="introduction">留言:
+            <textarea id="introduction" name="introduction" rows="8" cols="30" placeholder="请输入留言"></textarea><br>
+          </label>
+        </div>
+
+        <input type="submit" value="提交">
+      </form>
+    </main>
+
+  </div>
+
+
+  <script>
+    function previewAvatar(event) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var output = document.getElementById('avatarPreview');
+        output.src = reader.result;
+        output.style.display = 'block';
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  </script>
+  <script src="/js/base.js"></script>
+</body>
+
+</html>

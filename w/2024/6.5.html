@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.5</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+
+
+        @font-face {
+            font-family: 'AlimamaDaoLiTi-Regular';
+            src: url("./fonts/AlimamaDaoLiTi-Regular.woff2");
+        }
+
+        .background-properties {
+            background-color: #f0f0f0;
+            background-image: url('https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b');
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: cover;
+        }
+
+        .text-properties {
+            color: #333;
+            font-family: 'AlimamaDaoLiTi-Regular';
+            font-size: 30px;
+            text-shadow: 2px 2px 4px #000;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
+
+        .box-model-properties {
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #666;
+            resize: both;
+            overflow: auto;
+            outline: 2px solid #6d6d6d31;
+            outline-offset: 15px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="Abox">
+        <ol class="1">
+            <li>床前明月光</li>
+            <li>疑是地上霜</li>
+        </ol>
+        <button class="add">补全</button>
+
+        <!-- 复制p元素 -->
+        <div class="2">
+            <p class="cp">copy</p>
+        </div>
+        <button class="copy">复制</button>
+
+        <!-- 顶部插入 -->
+        <div class="3">
+            <ol class="ins">
+                <li>标题</li>
+                <li>标题</li>
+                <li>标题</li>
+            </ol>
+        </div>
+        <button class="insert">插入</button>
+
+        <div class="4">
+            <p class="hover">touch me</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const sj1 = '<li>举头望明月</li>'
+        const sj2 = '<li>低头思故乡</li>'
+        $(document).ready(() => {
+            $('.add').click(() => {
+                $('.1').append(sj1)
+                $('.1').append(sj2)
+            })
+
+            $('.copy').click(() => {
+                $('.Abox').append('cp').clone()
+            })
+
+            $('.insert').click(() => {
+                $('.ins').prepend('<li>insert</li>')
+            })
+            
+            $('.hover').hover(() => {
+                $('.hover').css('background', 'red')
+            }, () => {
+                $('.hover').css('background', 'blue')
+            })
+            
+        })
+    </script>
+    <script src="/js/base.js"></script>
+</body >
+
+</html >
