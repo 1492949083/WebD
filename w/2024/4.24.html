@@ -18,6 +18,7 @@
     img {
       width: 100px;
       transition: all 1s ease-in-out;
+      border-radius: 10px;
     }
 
     .flip-horizontal {
@@ -38,20 +39,28 @@
 
     /* 3D transformations */
     .perspective {
-      perspective: 500px;
+      transform-style: preserve-3d;
+      transform: rotateX(60deg);
     }
-
-    .rotateZ {
-      transform: rotateZ(45deg) scale(0.5);
+    .perspective div {
+      position: absolute;
+      top: 300px;
+      left: 30px;
+      background-color: pink;
     }
-
     .rotateX {
-      transform: rotateX(30deg) scale(0.5);
+      transform: rotateX(60deg) rotateZ(40deg);
+      left: 200px !important;
     }
 
     .rotateY {
-      transform: rotateY(70deg) scale(0.5);
+      transform: rotateY(90deg) rotateX(30deg);
     }
+
+    .rotateZ {
+      transform: rotateZ(60deg);
+    }
+
   </style>
 </head>
 
@@ -73,13 +82,13 @@
       <h2>拉伸图片：</h2>
       <img class="stretch" src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b" alt="Stretch Image">
     </div>
-
+    <br><br><br><br>
     <!-- 3D transformations -->
     <h2>3D视图：</h2>
     <div class="perspective">
-      <img class="rotateZ" src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b" alt="3D Rotate">
-      <img class="rotateX" src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b" alt="Rotate X">
-      <img class="rotateY" src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b" alt="Rotate Y">
+      <div class="rotateX"><img src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b"></div>
+      <div class="rotateY"><img src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b"></div>
+      <div class="rotateZ"><img src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics3.baidu.com%2Ffeed%2F730e0cf3d7ca7bcbc380089e1aecb06ef424a8f8.jpeg%40f_auto%3Ftoken%3Df0e76e0a5a3053cd1a865a417fe752db&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1713286800&t=8914ad5bc6a36e5c200b6244b6865f5b"></div>
     </div>
   </div>
     <script src="/js/base.js"></script>
