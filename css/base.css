@@ -154,7 +154,7 @@ img {
 
 .leftBar ul {
     position: fixed;
-    display: flex;
+    display: none;
     list-style-type: none;
     flex-direction: column;
 }
