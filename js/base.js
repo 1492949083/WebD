@@ -116,6 +116,8 @@ function loadScript(src) {
 
 function isLocal(local) {
     if (local == true) {
+        loadScript('/js/jquery.min.js')
+        loadScript('/js/jquery-ui.min.js');
         const link = `
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
@@ -126,18 +128,20 @@ function isLocal(local) {
         // 加载 jQuery 和 jQuery UI
         // loadScript('https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js');
         // loadScript('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js');
-        loadScript('/js/jquery.min.js');
-        loadScript('/js/jquery-ui.min.js');
+        
         // 加载本地脚本
         setTimeout(() => {
             loadScript('/js/navBar.js');
-        }, 100);
+        }, 300);
         loadScript('/js/tools.js');
           
         // 将HTML添加到Abox中
         Abox.insertAdjacentHTML('afterbegin', navBarHTML);
         meta.insertAdjacentHTML('afterend', link);    
     } else {
+        // 加载 jQuery 和 jQuery UI
+        loadScript('https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js');
+        loadScript('https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js');
         const link = `
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4246322_x9378e49s9.css">
@@ -145,13 +149,10 @@ function isLocal(local) {
         <link rel="stylesheet" href="/css/theme.css">
         <link rel="stylesheet" href="/css/palestine.css">
         `
-        // 加载 jQuery 和 jQuery UI
-        loadScript('https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js');
-        loadScript('https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js');
         // 加载本地脚本
         setTimeout(() => {
             loadScript('/js/navBar.js');
-        }, 100);
+        }, 300);
         loadScript('/js/tools.js');
           
         // 将HTML添加到Abox中
