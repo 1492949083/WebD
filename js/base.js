@@ -21,8 +21,8 @@ const navBarHTML = `
                                 <a class="p_li1_a" href="javascript:void(0);">上学期作业</a>
                                 <ul class="p_ul2">
                                     <li><a href="//2022web.766677.xyz">Simple-Web</a></li>
-                                    <li><a href="//github.com/1492949083/TurnBasedGenshin">回合制原神</a></li>
-                                    <li><a href="https://github.com/1492949083/PingPongWinRateCalculator">乒乓球胜率计算器</a></li>
+                                    <li><a href="//github.com/ccc007ccc/TurnBasedGenshin">回合制原神</a></li>
+                                    <li><a href="https://github.com/ccc007ccc/PingPongWinRateCalculator">乒乓球胜率计算器</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -31,10 +31,10 @@ const navBarHTML = `
                             <li>
                                 <a href="javascript:void(0);">github储存库</a>
                                 <ul>
-                                    <li><a href="https://github.com/1492949083/script_c-">c++自动点击</a></li>
-                                    <li><a href="https://github.com/1492949083/AutoClick">Python自动点击</a></li>
-                                    <li><a href="https://github.com/1492949083/AudioDurationCalculator">音频时长总和计算器</a></li>
-                                    <li><a href="https://github.com/1492949083/ProgramController">程序控制器</a></li>
+                                    <li><a href="https://github.com/ccc007ccc/script_c-">c++自动点击</a></li>
+                                    <li><a href="https://github.com/ccc007ccc/AutoClick">Python自动点击</a></li>
+                                    <li><a href="https://github.com/ccc007ccc/AudioDurationCalculator">音频时长总和计算器</a></li>
+                                    <li><a href="https://github.com/ccc007ccc/ProgramController">程序控制器</a></li>
                                 </ul>
                             </li>
                             <li><a href="/w/BaseConverter.html">进制转换器(在做)</a></li>
@@ -65,7 +65,7 @@ const navBarHTML = `
                 <a href="https://gitee.com/ccc007ccc/WebD" target="_blank">
                     <i id="gitee" class="iconfont icon-gitee"></i>
                 </a>
-                <a href="https://github.com/1492949083/WebD" target="_blank">
+                <a href="https://github.com/ccc007ccc/WebD" target="_blank">
                     <i id="github" class="fab fa-github"></i>
                 </a>
             </div>
